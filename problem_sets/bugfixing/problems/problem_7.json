@@ -1,0 +1,45 @@
+{
+	"identifier": "problem_7",
+	"description": "Design a data structure that is an LRU cache.",
+	"function_prototype": {
+		"function_name": "LRUCache",
+		"parameters": [
+			{"name": "capacity", "type": "int"},
+			{"name": "key", "type": "int"},
+			{"name": "value", "type": "int"}
+		],
+		"return_values": [{"type": "int"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"capacity": 2, "key": 1, "value": 1}, "expected_output": [null]},
+		{"input": {"capacity": 2, "key": 2, "value": 2}, "expected_output": [null]},
+		{"input": {"capacity": 2, "key": 1, "value": null}, "expected_output": [1]},
+		{"input": {"capacity": 2, "key": 3, "value": 3}, "expected_output": [null]},
+		{"input": {"capacity": 2, "key": 2, "value": null}, "expected_output": [-1]}
+	],
+	"tags": ["Data Structures", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",			
+			"prompt": "Implement an LRU Cache with methods to get and put values. If a get() call is made for a non-existent key, return -1.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"capacity": 2, "key": 1, "value": 1}, "expected_output": [null]},
+				{"input": {"capacity": 2, "key": 2, "value": 2}, "expected_output": [null]},
+				{"input": {"capacity": 2, "key": 1, "value": null}, "expected_output": [1]},
+				{"input": {"capacity": 2, "key": 2, "value": null}, "expected_output": [-1]}
+			]
+		},
+		{
+			"prompt_id": "detailed_prompt",
+			"prompt": "Design a data structure for an LRU (Least Recently Used) Cache. The cache should support get and put operations. When trying to retrieve a value using get(key), return the value if present; otherwise, return -1. When inserting or updating a value using put(key, value), ensure that the most recently accessed or inserted items remain in the cache when its capacity is reached.",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"capacity": 2, "key": 1, "value": 1}, "expected_output": [null]},
+				{"input": {"capacity": 2, "key": 2, "value": 2}, "expected_output": [null]},
+				{"input": {"capacity": 2, "key": 1, "value": null}, "expected_output": [1]},
+				{"input": {"capacity": 2, "key": 2, "value": null}, "expected_output": [-1]}
+			]
+		}
+	]
+}

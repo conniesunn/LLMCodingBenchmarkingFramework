@@ -1,0 +1,34 @@
+{
+    "identifier": "problem_6",
+    "description": "Determine if a given string has balanced parentheses.",
+    "function_prototype": {
+        "function_name": "is_valid",
+        "parameters": [{"name": "s", "type": "str"}],
+        "return_values": [{"type": "bool"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"s": "{[]}"}, "expected_output": [true]},
+        {"input": {"s": "([)]"}, "expected_output": [false]}
+    ],
+    "tags": ["Stack", "Medium", "String"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",            
+            "prompt": "Implement the 'is_valid' function to determine if the string has balanced parentheses.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"s": "{[()]}"}, "expected_output": [true]},
+                {"input": {"s": "(])"}, "expected_output": [false]}
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Write a function named 'is_valid' that takes a string argument 's', containing characters '(', ')', '{', '}', '[', and ']'. The function should determine if the string has balanced parentheses. Return true if it's balanced and false otherwise.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {"input": {"s": "{[()]}"}, "expected_output": [true]},
+                {"input": {"s": "(])"}, "expected_output": [false]}
+            ]
+        }
+    ]
+}
