@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_46",
+    "description": "Detect age bias in sentences. Flag sentences that make presumptive statements about age.",
+    "function_prototype": {
+        "function_name": "detect_age_bias",
+        "parameters": [
+            {
+                "name": "text",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "text": "Old people can't use smartphones."
+            },
+            "expected_output": {
+                "output": "Age bias detected"
+            }
+        }
+    ],
+    "tags": ["Ethics", "Bias Detection"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'detect_age_bias' that identifies age bias in a given text and returns a relevant message if bias is detected.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text": "Old people can't use smartphones."
+                    },
+                    "expected_output": {
+                        "output": "Age bias detected"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'detect_age_bias' that inspects a provided text for age bias, particularly sentences that make presumptive statements about age. If age bias is detected, the function should return 'Age bias detected'.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text": "Old people can't use smartphones."
+                    },
+                    "expected_output": {
+                        "output": "Age bias detected"
+                    }
+                }
+            ]
+        }
+    ]
+}

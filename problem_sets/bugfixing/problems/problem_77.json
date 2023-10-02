@@ -1,0 +1,72 @@
+{
+    "identifier": "problem_77",
+    "description": "Given vectors Q (query) and K (key), and matrices W1 and W2, implement the additive attention mechanism.",
+    "function_prototype": {
+        "function_name": "additive_attention",
+        "input_parameters": [
+            {
+                "name": "Q",
+                "type": "numpy.ndarray"
+            },
+            {
+                "name": "K",
+                "type": "numpy.ndarray"
+            },
+            {
+                "name": "W1",
+                "type": "numpy.ndarray"
+            },
+            {
+                "name": "W2",
+                "type": "numpy.ndarray"
+            }
+        ],
+        "output_type": "float or int"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "Q": [1, 2],
+                "K": [2, 3],
+                "W1": [[0.5, 0.3], [0.2, 0.4]],
+                "W2": [[0.1, 0.5], [0.4, 0.2]]
+            },
+            "expected_output_type": "float or int"
+        }
+    ],
+    "tags": ["Attention Mechanism", "Neural Networks"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'additive_attention' function that calculates additive attention scores using vectors Q (query) and K (key) along with matrices W1 and W2. The function should return the resulting attention score.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "Q": [1, 2],
+                        "K": [2, 3],
+                        "W1": [[0.5, 0.3], [0.2, 0.4]],
+                        "W2": [[0.1, 0.5], [0.4, 0.2]]
+                    },
+                    "expected_output_type": "float or int"
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In the context of attention mechanisms in neural networks, the additive attention strategy computes attention scores based on an additive formula involving vectors Q (query), K (key), and matrices W1 and W2. Your task is to implement the 'additive_attention' function to calculate the attention score using these elements. Ensure your function can handle numpy arrays efficiently.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "Q": [1, 2],
+                        "K": [2, 3],
+                        "W1": [[0.5, 0.3], [0.2, 0.4]],
+                        "W2": [[0.1, 0.5], [0.4, 0.2]]
+                    },
+                    "expected_output_type": "float or int"
+                }
+            ]
+        }
+    ]
+}

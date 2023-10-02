@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_49",
+    "description": "Given a dataset and outcomes of a model, check if the outcomes are unfairly biased against a particular gender. Consider a significant deviation from the mean as bias.",
+    "function_prototype": {
+        "function_name": "detect_outcome_bias",
+        "parameters": [
+            {
+                "name": "data",
+                "type": "List[Dict[str, Any]]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "data": [{"gender": "male", "outcome": "True"}, {"gender": "female", "outcome": "False"}]
+            },
+            "expected_output": {
+                "output": "Bias detected against gender: female"
+            }
+        }
+    ],
+    "tags": ["Ethics", "Bias Detection"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'detect_outcome_bias' that checks if the outcomes in a dataset are unfairly biased against a particular gender.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "data": [{"gender": "male", "outcome": "True"}, {"gender": "female", "outcome": "False"}]
+                    },
+                    "expected_output": {
+                        "output": "Bias detected against gender: female"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'detect_outcome_bias' that evaluates a dataset for any unfair bias against a specific gender based on outcomes. If such bias is found, the function should return a message indicating which gender is affected.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "data": [{"gender": "male", "outcome": "True"}, {"gender": "female", "outcome": "False"}]
+                    },
+                    "expected_output": {
+                        "output": "Bias detected against gender: female"
+                    }
+                }
+            ]
+        }
+    ]
+}

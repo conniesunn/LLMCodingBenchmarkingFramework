@@ -1,0 +1,68 @@
+{
+    "identifier": "problem_27",
+    "description": "Given a palette of colors and a canvas of size n x n, generate an artwork by randomly placing colors.",
+    "function_prototype": {
+        "function_name": "generate_art",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            },
+            {
+                "name": "palette",
+                "type": "List[str]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "List[List[str]]"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 2,
+                "palette": ["Red", "Blue", "Green"]
+            },
+            "expected_output": {
+                "output": [["Red", "Green"], ["Blue", "Green"]]
+            }
+        }
+    ],
+    "tags": ["Art Generation", "Randomization"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'generate_art' that, using a given color palette, creates a random n x n canvas artwork.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "n": 2,
+                        "palette": ["Red", "Blue", "Green"]
+                    },
+                    "expected_output": {
+                        "output": [["Red", "Green"], ["Blue", "Green"]]
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'generate_art' that takes an integer 'n' representing the size of the canvas and a list 'palette' containing colors. The function should generate an artwork by randomly filling an n x n canvas with colors from the palette. The artwork should be returned as a 2D list.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "n": 2,
+                        "palette": ["Red", "Blue", "Green"]
+                    },
+                    "expected_output": {
+                        "output": [["Red", "Green"], ["Blue", "Green"]]
+                    }
+                }
+            ]
+        }
+    ]
+}

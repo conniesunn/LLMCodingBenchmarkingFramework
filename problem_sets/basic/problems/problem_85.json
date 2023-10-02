@@ -1,0 +1,51 @@
+{
+    "identifier": "problem_85",
+    "description": "Given a list of sentences, tokenize each sentence into individual words.",
+    "function_prototype": {
+        "function_name": "tokenize_text",
+        "input_parameters": [
+            {
+                "name": "sentences",
+                "type": "List[str]"
+            }
+        ],
+        "output_type": "List[List[str]]"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "sentences": ["hello world", "this is a test"]
+            },
+            "expected_output": [["hello", "world"], ["this", "is", "a", "test"]]
+        }
+    ],
+    "tags": ["Text Processing", "Tokenization"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'tokenize_text' function that takes in a list of sentences and returns a list where each sentence is tokenized into individual words.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "sentences": ["hello world", "this is a test"]
+                    },
+                    "expected_output": [["hello", "world"], ["this", "is", "a", "test"]]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Text tokenization is a fundamental step in many Natural Language Processing (NLP) tasks. You are provided with a list of sentences and your task is to design a function named 'tokenize_text'. The function should tokenize each sentence into individual words and return a list where each element is a list of tokens (words) from the corresponding sentence in the input.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "sentences": ["hello world", "this is a test"]
+                    },
+                    "expected_output": [["hello", "world"], ["this", "is", "a", "test"]]
+                }
+            ]
+        }
+    ]
+}

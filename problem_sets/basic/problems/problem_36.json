@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_36",
+    "description": "Implement a Seq2Seq function to convert a date format from \"YYYY-MM-DD\" to \"DD/MM/YYYY\".",
+    "function_prototype": {
+        "function_name": "reformat_date",
+        "parameters": [
+            {
+                "name": "date",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "date": "2023-09-03"
+            },
+            "expected_output": {
+                "output": "03/09/2023"
+            }
+        }
+    ],
+    "tags": ["NLP", "Seq2Seq", "Date Manipulation"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'reformat_date' that converts a date format from \"YYYY-MM-DD\" to \"DD/MM/YYYY\".",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "date": "2023-09-03"
+                    },
+                    "expected_output": {
+                        "output": "03/09/2023"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'reformat_date' that takes a single argument 'date', which is a string in the format \"YYYY-MM-DD\". The function should use a Seq2Seq model to convert this date format to \"DD/MM/YYYY\". The function should return the reformatted date as a string.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "date": "2023-09-03"
+                    },
+                    "expected_output": {
+                        "output": "03/09/2023"
+                    }
+                }
+            ]
+        }
+    ]
+}

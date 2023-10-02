@@ -1,0 +1,55 @@
+{
+    "identifier": "problem_63",
+    "description": "Given an action and the current state, implement a reward function for the agent.",
+    "function_prototype": {
+        "function_name": "reward_function",
+        "parameters": [
+            {"name": "state", "type": "int"},
+            {"name": "action", "type": "str"}
+        ],
+        "return_values": [{"type": "float"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"state": 2, "action": "move"},
+            "expected_output": ["GREATER"]
+        },
+        {
+            "input": {"state": 2, "action": "stay"},
+            "expected_output": ["LESSER"]
+        }
+    ],
+    "tags": ["Reinforcement Learning", "Reward Function", "State-Action Reward", "Beginner"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the reward_function to determine the reward for a given state and action.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"state": 2, "action": "move"},
+                    "expected_output": ["GREATER"]
+                },
+                {
+                    "input": {"state": 2, "action": "stay"},
+                    "expected_output": ["LESSER"]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Write a function named 'reward_function' that takes two arguments: 'state' which represents the current state of the agent, and 'action' which is a string indicating the action taken ('move' or 'stay'). The function should return the reward for the given state-action pair.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"state": 2, "action": "move"},
+                    "expected_output": ["GREATER"]
+                },
+                {
+                    "input": {"state": 2, "action": "stay"},
+                    "expected_output": ["LESSER"]
+                }
+            ]
+        }
+    ]
+}

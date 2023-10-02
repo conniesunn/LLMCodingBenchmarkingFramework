@@ -1,0 +1,64 @@
+{
+    "identifier": "problem_14",
+    "description": "Given a corpus of text, design a basic tokenizer to split the text into individual words.",
+    "function_prototype": {
+        "function_name": "tokenizer",
+        "parameters": [
+            {
+                "name": "text",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "List[str]"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "text": "Generative AI is fun."
+            },
+            "expected_output": {
+                "output": ["Generative", "AI", "is", "fun."]
+            }
+        }
+    ],
+    "tags": [
+        "Strings",
+        "Basic Algorithms"
+    ],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'tokenizer' that splits a given text into individual words.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text": "Generative AI is fun."
+                    },
+                    "expected_output": {
+                        "output": ["Generative", "AI", "is", "fun."]
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'tokenizer' that takes a string 'text' as its argument. The function should return a list of individual words from the given text. You can assume the words are separated by spaces.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text": "Generative AI is fun."
+                    },
+                    "expected_output": {
+                        "output": ["Generative", "AI", "is", "fun."]
+                    }
+                }
+            ]
+        }
+    ]
+}

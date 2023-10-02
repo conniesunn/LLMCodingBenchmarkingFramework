@@ -1,0 +1,43 @@
+{
+    "identifier": "problem_100",
+    "description": "This challenge involves crafting an interactive function named 'narrative_generator'. On execution, the function should prompt the user for three elements that form the building blocks of a story: a protagonist, a setting, and an action. Utilizing these components, the function should compose and return a narrative.",
+    "function_prototype": {
+        "function_name": "narrative_generator",
+        "input_parameters": [],
+        "output_type": "string"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {},
+            "expected_output": "Alice was in the forest, where she was singing joyfully.",
+            "input_string_sequence": ["Alice", "forest", "singing"]
+        }
+    ],
+    "tags": ["User Input", "String Manipulation", "Story Generation"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Your objective is to code an interactive function titled 'narrative_generator'. When this function is run, it should ask the user for three distinct inputs: the name of a protagonist, a setting, and an action. Using these inputs, the function must weave a narrative and return it. For example, if the inputs provided are 'Alice', 'forest', and 'singing', the resulting story should be: 'Alice was in the forest, where she was singing joyfully.'.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "Alice was in the forest, where she was singing joyfully.",
+                    "input_string_sequence": ["Alice", "forest", "singing"]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In this task, you are given the role of constructing an interactive storytelling function dubbed 'narrative_generator'. When activated, this function should prompt the user to supply three essential story elements: a protagonist's name, a setting, and a specific action. Armed with these details, your function should fabricate a coherent narrative and present it as the return value. To elucidate with an instance, should the user input 'Alice' as the protagonist, 'forest' as the setting, and 'singing' as the action, the function's narrative output should be: 'Alice was in the forest, where she was singing joyfully.'.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "Alice was in the forest, where she was singing joyfully.",
+                    "input_string_sequence": ["Alice", "forest", "singing"]
+                }
+            ]
+        }
+    ]
+}

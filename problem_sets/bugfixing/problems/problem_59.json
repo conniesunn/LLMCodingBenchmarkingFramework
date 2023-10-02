@@ -1,0 +1,52 @@
+{
+    "identifier": "problem_59",
+    "description": "Design a metric for evaluating the novelty of generated content compared to a reference set.",
+    "function_prototype": {
+        "function_name": "novelty_score",
+        "parameters": [
+            {"name": "generated", "type": "str"},
+            {"name": "reference_set", "type": "List[str]"}
+        ],
+        "return_values": [{"type": "float"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "generated": "apple",
+                "reference_set": ["apple", "banana", "cherry"]
+            },
+            "expected_output": [0.0]
+        }
+    ],
+    "tags": ["Evaluation", "Metrics", "Text Generation", "Novelty", "Intermediate"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the novelty_score function to compute the novelty of the generated content compared to a given reference set.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "generated": "apple",
+                        "reference_set": ["apple", "banana", "cherry"]
+                    },
+                    "expected_output": [0.0]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Write a function named 'novelty_score' that takes two arguments: 'generated' which is a string, and 'reference_set' which is a list of strings. The function should return a score between 0 and 1 indicating how novel the generated content is compared to the reference set. A score of 1 indicates that the generated content is completely novel, while a score of 0 indicates that it's not novel at all.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "generated": "apple",
+                        "reference_set": ["apple", "banana", "cherry"]
+                    },
+                    "expected_output": [0.0]
+                }
+            ]
+        }
+    ]
+}

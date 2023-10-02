@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_30",
+    "description": "Given a 2D grayscale image (values between 0 to 255), implement a function that returns the average pixel intensity.",
+    "function_prototype": {
+        "function_name": "average_intensity",
+        "parameters": [
+            {
+                "name": "image",
+                "type": "List[List[int]]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "image": [[100, 200], [150, 250]]
+            },
+            "expected_output": {
+                "output": 162.5
+            }
+        }
+    ],
+    "tags": ["Image Processing", "Basic Algorithms"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'average_intensity' that computes the average intensity of a 2D grayscale image.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image": [[100, 200], [150, 250]]
+                    },
+                    "expected_output": {
+                        "output": 162.5
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'average_intensity' that takes a 2D grayscale image (represented as a list of lists of integers) as its argument. The values in the image range from 0 to 255. Your function should compute and return the average intensity of the pixels in the image.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image": [[100, 200], [150, 250]]
+                    },
+                    "expected_output": {
+                        "output": 162.5
+                    }
+                }
+            ]
+        }
+    ]
+}

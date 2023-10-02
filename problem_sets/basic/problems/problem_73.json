@@ -1,0 +1,99 @@
+{
+    "identifier": "problem_73",
+    "description": "Implement a basic multi-head attention mechanism given matrices Q (queries), K (keys), V (values), and num_heads (number of attention heads).",
+    "function_prototype": {
+        "function_name": "multi_head_attention",
+        "input_parameters": [
+            {
+                "name": "Q",
+                "type": "2D numpy array"
+            },
+            {
+                "name": "K",
+                "type": "2D numpy array"
+            },
+            {
+                "name": "V",
+                "type": "2D numpy array"
+            },
+            {
+                "name": "num_heads",
+                "type": "int"
+            }
+        ],
+        "output_type": "2D numpy array"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "Q": [
+                    [1, 2],
+                    [2, 3]
+                ],
+                "K": [
+                    [1, 2],
+                    [2, 3]
+                ],
+                "V": [
+                    [1, 2],
+                    [2, 3]
+                ],
+                "num_heads": 2
+            },
+            "expected_output": "2D_array_with_shape_2x2"
+        }
+    ],
+    "tags": ["Attention Mechanism", "Multi-head Attention", "Neural Networks"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'multi_head_attention' function that takes matrices Q (queries), K (keys), V (values), and an integer num_heads (number of attention heads). Compute the multi-head attention output and return a 2D numpy array with shape (2, 2).",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "Q": [
+                            [1, 2],
+                            [2, 3]
+                        ],
+                        "K": [
+                            [1, 2],
+                            [2, 3]
+                        ],
+                        "V": [
+                            [1, 2],
+                            [2, 3]
+                        ],
+                        "num_heads": 2
+                    },
+                    "expected_output": "2D_array_with_shape_2x2"
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "The multi-head attention mechanism is fundamental in Transformer-based architectures. Your task is to design a function titled 'multi_head_attention' that takes in matrices Q (queries), K (keys), V (values), and an integer indicating the number of attention heads, num_heads. The function should produce a 2D numpy array that is the result of the multi-head attention calculation. For validation purposes, the output should have a shape of (2, 2).",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "Q": [
+                            [1, 2],
+                            [2, 3]
+                        ],
+                        "K": [
+                            [1, 2],
+                            [2, 3]
+                        ],
+                        "V": [
+                            [1, 2],
+                            [2, 3]
+                        ],
+                        "num_heads": 2
+                    },
+                    "expected_output": "2D_array_with_shape_2x2"
+                }
+            ]
+        }
+    ]
+}

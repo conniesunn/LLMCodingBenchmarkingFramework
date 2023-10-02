@@ -1,0 +1,43 @@
+{
+    "identifier": "problem_93",
+    "description": "The goal is to implement a function that prompts the user for a number, and then asks the user if they'd like to square that number. Depending on the user's response, the function should either return the squared value or the original number.",
+    "function_prototype": {
+        "function_name": "interactive_square",
+        "input_parameters": [],
+        "output_type": "int"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {},
+            "expected_output": 25,
+            "input_string_sequence": ["5", "yes"]
+        }
+    ],
+    "tags": ["User Input", "Conditionals"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Design the 'interactive_square' function. This function should first ask the user for a number. Next, it should inquire if the user would like to square the entered number. If the user responds with 'yes', the function should yield the squared value of the number. Otherwise, it should return the original number. For instance, if the user inputs '5' and then 'yes', the function should return 25.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": 25,
+                    "input_string_sequence": ["5", "yes"]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In this task, you'll be crafting a function, 'interactive_square', that serves as an interactive tool. Initially, it should prompt the user to provide a number. Following this, it should inquire whether the user wishes to square the given number. If the user replies with 'yes', your function should compute and return the squared value. However, if the user opts out, the function should just return the number they initially provided. For instance, if a user submits '5' as their chosen number and then agrees to square it with a 'yes' response, your function should yield the result 25.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": 25,
+                    "input_string_sequence": ["5", "yes"]
+                }
+            ]
+        }
+    ]
+}

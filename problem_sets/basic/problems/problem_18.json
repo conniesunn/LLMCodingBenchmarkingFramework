@@ -1,0 +1,71 @@
+{
+    "identifier": "problem_18",
+    "description": "Given a sequence of words, predict the next word based on frequency. This is a naive approach to text generation.",
+    "function_prototype": {
+        "function_name": "predict_next_word",
+        "parameters": [
+            {
+                "name": "corpus",
+                "type": "str"
+            },
+            {
+                "name": "word",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "corpus": "AI is fun. Generative AI is powerful. AI is transformative.",
+                "word": "AI"
+            },
+            "expected_output": {
+                "output": "is"
+            }
+        }
+    ],
+    "tags": [
+        "Text Generation",
+        "Basic Algorithms"
+    ],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'predict_next_word' that predicts the next word in a sequence based on frequency.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "corpus": "AI is fun. Generative AI is powerful. AI is transformative.",
+                        "word": "AI"
+                    },
+                    "expected_output": {
+                        "output": "is"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'predict_next_word' that takes a string 'corpus' and a string 'word' as its arguments. The function should return the most frequent word that follows the given 'word' in the 'corpus'.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "corpus": "AI is fun. Generative AI is powerful. AI is transformative.",
+                        "word": "AI"
+                    },
+                    "expected_output": {
+                        "output": "is"
+                    }
+                }
+            ]
+        }
+    ]
+}

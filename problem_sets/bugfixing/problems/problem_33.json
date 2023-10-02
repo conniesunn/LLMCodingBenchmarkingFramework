@@ -1,0 +1,75 @@
+{
+    "identifier": "problem_33",
+    "description": "Given a 2D image (with colors as strings), implement a function to apply a color filter by changing one color to another.",
+    "function_prototype": {
+        "function_name": "apply_filter",
+        "parameters": [
+            {
+                "name": "image",
+                "type": "List[List[str]]"
+            },
+            {
+                "name": "original_color",
+                "type": "str"
+            },
+            {
+                "name": "new_color",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "List[List[str]]"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "image": [["Red", "Green"], ["Blue", "Red"]],
+                "original_color": "Red",
+                "new_color": "Yellow"
+            },
+            "expected_output": {
+                "output": [["Yellow", "Green"], ["Blue", "Yellow"]]
+            }
+        }
+    ],
+    "tags": ["Image Processing", "Basic Algorithms"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'apply_filter' function to change a specific color in a 2D image to a new color.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image": [["Red", "Green"], ["Blue", "Red"]],
+                        "original_color": "Red",
+                        "new_color": "Yellow"
+                    },
+                    "expected_output": {
+                        "output": [["Yellow", "Green"], ["Blue", "Yellow"]]
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function called 'apply_filter'. This function should accept a 2D image (represented as a list of lists of string colors), a string 'original_color', and a string 'new_color'. The function should change every occurrence of the original color in the image to the new color and return the modified image.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image": [["Red", "Green"], ["Blue", "Red"]],
+                        "original_color": "Red",
+                        "new_color": "Yellow"
+                    },
+                    "expected_output": {
+                        "output": [["Yellow", "Green"], ["Blue", "Yellow"]]
+                    }
+                }
+            ]
+        }
+    ]
+}

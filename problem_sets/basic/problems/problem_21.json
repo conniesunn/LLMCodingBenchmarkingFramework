@@ -1,0 +1,64 @@
+{
+    "identifier": "problem_21",
+    "description": "Design a basic function that acts as a mock generative model. Given noise, it should produce a generated output. For this problem, the mock model will simply return the sum of the noise values.",
+    "function_prototype": {
+        "function_name": "mock_generative_model",
+        "parameters": [
+            {
+                "name": "noise",
+                "type": "List[float]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "noise": [0.1, 0.2, 0.3]
+            },
+            "expected_output": {
+                "output": 0.6
+            }
+        }
+    ],
+    "tags": [
+        "Generative Models",
+        "Basic Algorithms"
+    ],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'mock_generative_model' that acts as a basic generative model producing an output from given noise.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "noise": [0.1, 0.2, 0.3]
+                    },
+                    "expected_output": {
+                        "output": 0.6
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'mock_generative_model' that takes a list 'noise' of floating-point numbers as its argument. The function should return a float, which is the sum of the values in the 'noise' list.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "noise": [0.1, 0.2, 0.3]
+                    },
+                    "expected_output": {
+                        "output": 0.6
+                    }
+                }
+            ]
+        }
+    ]
+}

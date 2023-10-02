@@ -1,0 +1,46 @@
+{
+	"identifier": "problem_8",
+	"description": "Design a queue using two stacks.",
+	"function_prototype": {
+		"function_name": "MyQueue",
+		"parameters": [
+			{"name": "x", "type": "int"}
+		],
+		"return_values": [
+			{"type": "int"},
+			{"type": "bool"}
+		]
+	},
+	"correctness_test_suite": [
+		{"input": {"x": 1}, "expected_output": [null]},
+		{"input": {"x": 2}, "expected_output": [null]},
+		{"input": {"x": null}, "expected_output": [1]},
+		{"input": {"x": null}, "expected_output": [1]},
+		{"input": {"x": null}, "expected_output": [false]}
+	],
+	"tags": ["Data Structures", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",			
+			"prompt": "Implement a queue using two stacks. You need to support methods push, pop, peek, and empty.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"x": 1}, "expected_output": [null]},
+				{"input": {"x": 2}, "expected_output": [null]},
+				{"input": {"x": null}, "expected_output": [1]},
+				{"input": {"x": null}, "expected_output": [false]}
+			]
+		},
+		{
+			"prompt_id": "detailed_prompt",
+			"prompt": "Design a data structure which mimics the behavior of a queue. However, internally, it should use two stacks to implement the queue operations. The queue should support push, pop, peek, and empty operations.",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"x": 1}, "expected_output": [null]},
+				{"input": {"x": 2}, "expected_output": [null]},
+				{"input": {"x": null}, "expected_output": [1]},
+				{"input": {"x": null}, "expected_output": [false]}
+			]
+		}
+	]
+}

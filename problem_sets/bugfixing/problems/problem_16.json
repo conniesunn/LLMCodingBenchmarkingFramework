@@ -1,0 +1,65 @@
+{
+    "identifier": "problem_16",
+    "description": "Given a list of embeddings (latent representations), determine the two most similar embeddings based on the Euclidean distance.",
+    "function_prototype": {
+        "function_name": "find_similar",
+        "parameters": [
+            {
+                "name": "embeddings",
+                "type": "List[List[float]]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "List[List[float]]"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "embeddings": [[1,2], [3,4], [3.1, 4.1]]
+            },
+            "expected_output": {
+                "output": [[3,4], [3.1, 4.1]]
+            }
+        }
+    ],
+    "tags": [
+        "Vector Similarity",
+        "Euclidean Distance",
+        "Embeddings"
+    ],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Design a 'find_similar' function that, when provided with a list of embeddings, returns the two most similar embeddings using the Euclidean distance.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "embeddings": [[1,2], [3,4], [3.1, 4.1]]
+                    },
+                    "expected_output": {
+                        "output": [[3,4], [3.1, 4.1]]
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Create a function named 'find_similar' that accepts a list of embeddings as input. Each embedding is a list of floating point numbers. The function should determine and return the two embeddings that are most similar to each other, based on the Euclidean distance between them.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "embeddings": [[1,2], [3,4], [3.1, 4.1]]
+                    },
+                    "expected_output": {
+                        "output": [[3,4], [3.1, 4.1]]
+                    }
+                }
+            ]
+        }
+    ]
+}

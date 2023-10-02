@@ -1,0 +1,69 @@
+{
+    "identifier": "problem_31",
+    "description": "Given a set of predefined lyrics lines, implement a function that creates a song by randomly choosing lines.",
+    "function_prototype": {
+        "function_name": "generate_lyrics",
+        "parameters": [
+            {
+                "name": "lines",
+                "type": "List[str]"
+            },
+            {
+                "name": "length",
+                "type": "int",
+                "default": 3
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "lines": ["Love is in the air", "Everywhere I look around"],
+                "length": 3
+            },
+            "expected_output": {
+                "output": "Love is in the air\nEverywhere I look around\nLove is in the air"
+            }
+        }
+    ],
+    "tags": ["Text Generation", "Basic Algorithms"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'generate_lyrics' function that creates a song by randomly choosing lines from a predefined set.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "lines": ["Love is in the air", "Everywhere I look around"],
+                        "length": 3
+                    },
+                    "expected_output": {
+                        "output": "Love is in the air\nEverywhere I look around\nLove is in the air"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function called 'generate_lyrics'. This function should accept a list of strings called 'lines' and an optional integer 'length' (default to 3). The function should generate a song by randomly selecting lines from the provided list up to the specified length. The generated song should be returned as a single string with each line separated by a newline character.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "lines": ["Love is in the air", "Everywhere I look around"],
+                        "length": 3
+                    },
+                    "expected_output": {
+                        "output": "Love is in the air\nEverywhere I look around\nLove is in the air"
+                    }
+                }
+            ]
+        }
+    ]
+}

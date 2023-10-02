@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_39",
+    "description": "Implement a simple dialogue system using Seq2Seq where certain questions have specific answers.",
+    "function_prototype": {
+        "function_name": "dialogue_system",
+        "parameters": [
+            {
+                "name": "question",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "question": "hello"
+            },
+            "expected_output": {
+                "output": "hi"
+            }
+        }
+    ],
+    "tags": ["NLP", "Dialogue System", "Seq2Seq"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'dialogue_system' that takes a question as input and returns a specific answer based on a predefined set of questions and answers.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "question": "hello"
+                    },
+                    "expected_output": {
+                        "output": "hi"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'dialogue_system' that uses a Seq2Seq approach to generate responses for specific questions. The function should take a string 'question' as its argument and return the corresponding answer as a string.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "question": "hello"
+                    },
+                    "expected_output": {
+                        "output": "hi"
+                    }
+                }
+            ]
+        }
+    ]
+}

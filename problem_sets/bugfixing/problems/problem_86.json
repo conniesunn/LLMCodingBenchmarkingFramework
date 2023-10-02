@@ -1,0 +1,51 @@
+{
+    "identifier": "problem_86",
+    "description": "Given a list of categorical items, the task is to convert the list into a one-hot encoded format.",
+    "function_prototype": {
+        "function_name": "one_hot_encode",
+        "input_parameters": [
+            {
+                "name": "data_list",
+                "type": "List[str]"
+            }
+        ],
+        "output_type": "List[List[int]]"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "data_list": ["cat", "dog", "cat"]
+            },
+            "expected_output": [[1, 0], [0, 1], [1, 0]]
+        }
+    ],
+    "tags": ["Data Preprocessing", "One-Hot Encoding"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'one_hot_encode' function that converts a list of categorical items into a one-hot encoded format.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "data_list": ["cat", "dog", "cat"]
+                    },
+                    "expected_output": [[1, 0], [0, 1], [1, 0]]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "One-Hot Encoding is a common technique used to convert categorical data into a format that can be provided to machine learning algorithms. Your task is to design a function named 'one_hot_encode'. Given a list of categorical items, the function should return the data in one-hot encoded format. For example, if the input list contains ['cat', 'dog', 'cat'], the output should be [[1, 0], [0, 1], [1, 0]].",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "data_list": ["cat", "dog", "cat"]
+                    },
+                    "expected_output": [[1, 0], [0, 1], [1, 0]]
+                }
+            ]
+        }
+    ]
+}

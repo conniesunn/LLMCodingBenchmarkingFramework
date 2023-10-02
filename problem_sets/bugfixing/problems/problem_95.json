@@ -1,0 +1,43 @@
+{
+    "identifier": "problem_95",
+    "description": "The objective is to design a function that interactively requests a seed word from the user. Once received, the function should return this word repeated thrice consecutively.",
+    "function_prototype": {
+        "function_name": "word_repeater",
+        "input_parameters": [],
+        "output_type": "string"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {},
+            "expected_output": "hellohellohello",
+            "input_string_sequence": ["hello"]
+        }
+    ],
+    "tags": ["User Input", "String Manipulation"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Develop a function called 'word_repeater'. When called, this function should prompt the user for a seed word. After receiving this input, it should give back the word concatenated with itself three times. For instance, if a user inputs 'hello', the function should produce 'hellohellohello'.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "hellohellohello",
+                    "input_string_sequence": ["hello"]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In this assignment, your mission is to construct a function named 'word_repeater'. This function is designed to interactively acquire a seed word from a user. Once this word is entered, the function's job is to yield this word repeated thrice in a row, without any spaces or separators in between. For example, if the word 'apple' is provided by the user, the function's output should be 'appleappleapple'.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "hellohellohello",
+                    "input_string_sequence": ["hello"]
+                }
+            ]
+        }
+    ]
+}

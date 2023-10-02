@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_45",
+    "description": "Detect racial bias in given text.",
+    "function_prototype": {
+        "function_name": "detect_racial_bias",
+        "parameters": [
+            {
+                "name": "text",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "text": "Asian people are smart."
+            },
+            "expected_output": {
+                "output": "Racial bias detected"
+            }
+        }
+    ],
+    "tags": ["Ethics", "Bias Detection"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'detect_racial_bias' that identifies racial bias in a given text.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text": "Asian people are smart."
+                    },
+                    "expected_output": {
+                        "output": "Racial bias detected"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'detect_racial_bias' that reviews the given text for racial bias. If racial bias is found in the text, the function should return 'Racial bias detected'.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text": "Asian people are smart."
+                    },
+                    "expected_output": {
+                        "output": "Racial bias detected"
+                    }
+                }
+            ]
+        }
+    ]
+}

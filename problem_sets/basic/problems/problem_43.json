@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_43",
+    "description": "Implement a Seq2Seq function to convert 12-hour time format to 24-hour format.",
+    "function_prototype": {
+        "function_name": "time_conversion",
+        "parameters": [
+            {
+                "name": "time_12h",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "time_12h": "02:30 PM"
+            },
+            "expected_output": {
+                "output": "14:30"
+            }
+        }
+    ],
+    "tags": ["Time Conversion", "Seq2Seq"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'time_conversion' that converts a given time from 12-hour format to 24-hour format.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "time_12h": "02:30 PM"
+                    },
+                    "expected_output": {
+                        "output": "14:30"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'time_conversion' that uses a Seq2Seq model to convert a given time 'time_12h' from 12-hour format (with AM/PM) to 24-hour format. The function should return the converted time as a string.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "time_12h": "02:30 PM"
+                    },
+                    "expected_output": {
+                        "output": "14:30"
+                    }
+                }
+            ]
+        }
+    ]
+}

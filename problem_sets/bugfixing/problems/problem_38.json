@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_38",
+    "description": "Given a number, implement a Seq2Seq function that converts it into words.",
+    "function_prototype": {
+        "function_name": "number_to_words",
+        "parameters": [
+            {
+                "name": "number",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "number": 25
+            },
+            "expected_output": {
+                "output": "twenty five"
+            }
+        }
+    ],
+    "tags": ["NLP", "Number Conversion", "Seq2Seq"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'number_to_words' that converts a given number into its word representation.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "number": 25
+                    },
+                    "expected_output": {
+                        "output": "twenty five"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'number_to_words' that takes a single argument 'number', which is an integer. The function should use a Seq2Seq model to convert this number into its word representation. The function should return the word representation of the number as a string.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "number": 25
+                    },
+                    "expected_output": {
+                        "output": "twenty five"
+                    }
+                }
+            ]
+        }
+    ]
+}

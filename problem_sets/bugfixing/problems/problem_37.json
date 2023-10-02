@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_37",
+    "description": "Implement a model to summarize long articles by returning only the first three sentences.",
+    "function_prototype": {
+        "function_name": "summarize_text",
+        "parameters": [
+            {
+                "name": "text",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "text": "Seq2Seq models are fascinating. They translate sequences. It's awesome!"
+            },
+            "expected_output": {
+                "output": "Seq2Seq models are fascinating. They translate sequences. It's awesome!"
+            }
+        }
+    ],
+    "tags": ["NLP", "Text Summarization", "Seq2Seq"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'summarize_text' that returns only the first three sentences of a given text.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text": "Seq2Seq models are fascinating. They translate sequences. It's awesome!"
+                    },
+                    "expected_output": {
+                        "output": "Seq2Seq models are fascinating. They translate sequences. It's awesome!"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'summarize_text' that takes a single argument 'text', which is a string. The function should use a model to extract and return only the first three sentences from the provided text. The function should return the summarized text as a string.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text": "Seq2Seq models are fascinating. They translate sequences. It's awesome!"
+                    },
+                    "expected_output": {
+                        "output": "Seq2Seq models are fascinating. They translate sequences. It's awesome!"
+                    }
+                }
+            ]
+        }
+    ]
+}

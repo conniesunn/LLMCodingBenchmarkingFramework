@@ -1,0 +1,54 @@
+{
+    "identifier": "problem_12",
+    "description": "Given a linked list, determine if it has a cycle in it. Implement it using O(1) (i.e. constant) memory.",
+    "function_prototype": {
+        "function_name": "hasCycle",
+        "parameters": [
+            {"name": "head", "type": "ListNode"}
+        ],
+        "return_values": [
+            {"type": "bool"}
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "head": "<Linked list representation with a cycle>"
+            },
+            "expected_output": {
+                "output": true
+            }
+        }
+    ],
+    "tags": ["Linked List", "Two Pointers", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'hasCycle' function to check if a given linked list has a cycle. You should use constant memory.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"head": "<Linked list representation with a cycle>"},
+                    "expected_output": {"output": true}
+                }
+            ],
+            "input_code": null
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Write a function 'hasCycle' that takes a linked list as input and determines if the linked list has a cycle. It should return true if there's a cycle, otherwise false. The function should use O(1) memory.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"head": "<Linked list representation without a cycle>"},
+                    "expected_output": {"output": false}
+                },
+                {
+                    "input": {"head": "<Linked list representation with a cycle>"},
+                    "expected_output": {"output": true}
+                }
+            ],
+            "input_code": null
+        }
+    ]
+}

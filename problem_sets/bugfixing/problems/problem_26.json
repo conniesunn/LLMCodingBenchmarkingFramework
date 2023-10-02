@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_26",
+    "description": "Given a long text, implement a function that returns a summarized version by returning the first and last sentences.",
+    "function_prototype": {
+        "function_name": "summarize",
+        "parameters": [
+            {
+                "name": "text",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "text": "Generative AI is complex. It requires understanding of various concepts. But it's rewarding."
+            },
+            "expected_output": {
+                "output": "Generative AI is complex. But it's rewarding."
+            }
+        }
+    ],
+    "tags": ["Text Processing", "Summarization"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'summarize' that shortens a long text to just its first and last sentences.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text": "Generative AI is complex. It requires understanding of various concepts. But it's rewarding."
+                    },
+                    "expected_output": {
+                        "output": "Generative AI is complex. But it's rewarding."
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Write a function named 'summarize' that takes a string 'text' as its argument. The function should process the text and return a summarized version that consists of only the first and last sentences of the input text.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text": "Generative AI is complex. It requires understanding of various concepts. But it's rewarding."
+                    },
+                    "expected_output": {
+                        "output": "Generative AI is complex. But it's rewarding."
+                    }
+                }
+            ]
+        }
+    ]
+}

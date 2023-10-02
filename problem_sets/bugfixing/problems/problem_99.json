@@ -1,0 +1,43 @@
+{
+    "identifier": "problem_99",
+    "description": "The goal of this challenge is to implement a function that prompts the user for a sentence and a word. This function should then combine the sentence with the word, placing a space between them, and finally return the resultant sentence.",
+    "function_prototype": {
+        "function_name": "append_to_sentence",
+        "input_parameters": [],
+        "output_type": "string"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {},
+            "expected_output": "Hello world",
+            "input_string_sequence": ["Hello", "world"]
+        }
+    ],
+    "tags": ["User Input", "String Manipulation"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "You are tasked with creating a function named 'append_to_sentence'. This function, upon being called, should request a sentence and a word from the user. Once the inputs are provided, the function must merge the sentence and the word, separated by a space. For instance, if the user inputs 'Hello' for the sentence and 'world' for the word, your function should return the string 'Hello world'.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "Hello world",
+                    "input_string_sequence": ["Hello", "world"]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In this challenge, you are expected to write an interactive function named 'append_to_sentence'. When the function is executed, it should solicit the user to provide a sentence followed by a word. Your function's duty is to amalgamate the given sentence and word, using a space as the separator. As an example, if the user offers 'Hello' as the sentence and 'world' as the word, your function should yield the combined string 'Hello world'.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "Hello world",
+                    "input_string_sequence": ["Hello", "world"]
+                }
+            ]
+        }
+    ]
+}

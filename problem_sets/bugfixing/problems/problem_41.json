@@ -1,0 +1,68 @@
+{
+    "identifier": "problem_41",
+    "description": "Implement a function to pad a sequence to a desired length. If the sequence is too long, truncate it.",
+    "function_prototype": {
+        "function_name": "pad_sequence",
+        "parameters": [
+            {
+                "name": "seq",
+                "type": "str"
+            },
+            {
+                "name": "length",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "seq": "hello",
+                "length": 7
+            },
+            "expected_output": {
+                "output": "hello__"
+            }
+        }
+    ],
+    "tags": ["Text Processing", "Padding"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'pad_sequence' that pads a given sequence to the desired length by adding underscores. If the sequence is too long, it should be truncated.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "seq": "hello",
+                        "length": 7
+                    },
+                    "expected_output": {
+                        "output": "hello__"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'pad_sequence' that adjusts the length of a given sequence 'seq' to match a specified length 'length'. If the sequence is shorter than the desired length, it should be padded with underscores. If it's longer, it should be truncated. Return the modified sequence.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "seq": "hello",
+                        "length": 7
+                    },
+                    "expected_output": {
+                        "output": "hello__"
+                    }
+                }
+            ]
+        }
+    ]
+}

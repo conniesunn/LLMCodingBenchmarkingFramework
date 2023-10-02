@@ -1,0 +1,71 @@
+{
+    "identifier": "problem_15",
+    "description": "Design a function to generate repeated patterns of a given sequence.",
+    "function_prototype": {
+        "function_name": "generate_pattern",
+        "parameters": [
+            {
+                "name": "pattern",
+                "type": "str"
+            },
+            {
+                "name": "repeats",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "pattern": "AB",
+                "repeats": 4
+            },
+            "expected_output": {
+                "output": "ABABABAB"
+            }
+        }
+    ],
+    "tags": [
+        "String Manipulation",
+        "Patterns"
+    ],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'generate_pattern' function to produce a sequence by repeating a given pattern a specified number of times.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "pattern": "AB",
+                        "repeats": 4
+                    },
+                    "expected_output": {
+                        "output": "ABABABAB"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function called 'generate_pattern' that takes in two arguments: 'pattern', a string, and 'repeats', an integer. The function should return a new string that is formed by repeating the pattern the specified number of times.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "pattern": "AB",
+                        "repeats": 4
+                    },
+                    "expected_output": {
+                        "output": "ABABABAB"
+                    }
+                }
+            ]
+        }
+    ]
+}

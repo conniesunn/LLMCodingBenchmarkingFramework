@@ -1,0 +1,43 @@
+{
+    "identifier": "problem_96",
+    "description": "The aim is to craft a function that interactively prompts the user for a base number and an increment value. Upon receiving these inputs, the function must generate and return a list that begins from the base number and gets incremented by the specified increment, continuing up to (base + 5 * increment).",
+    "function_prototype": {
+        "function_name": "incremental_sequence",
+        "input_parameters": [],
+        "output_type": "list of integers"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {},
+            "expected_output": [10, 12, 14, 16, 18, 20],
+            "input_string_sequence": ["10", "2"]
+        }
+    ],
+    "tags": ["User Input", "Lists", "Arithmetic"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Construct a function named 'incremental_sequence'. When invoked, this function should request a base number and an increment value from the user. After gathering these inputs, the function must yield a list. This list should commence from the base number and, at each step, augment by the increment value, culminating at (base + 5 * increment). As an illustration, if the base is '10' and the increment is '2', the resulting list should be [10, 12, 14, 16, 18, 20].",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": [10, 12, 14, 16, 18, 20],
+                    "input_string_sequence": ["10", "2"]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "For this task, your objective is to develop an interactive function titled 'incremental_sequence'. This function is engineered to prompt the user for two integer inputs: a base number and an increment value. Given these numbers, the function's duty is to produce a list. This list starts at the base number and proceeds to increase by the specified increment with each successive item. The list should terminate at (base + 5 * increment). For example, if the user inputs a base of '10' and an increment of '2', your function should output the list [10, 12, 14, 16, 18, 20].",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": [10, 12, 14, 16, 18, 20],
+                    "input_string_sequence": ["10", "2"]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_44",
+    "description": "Write code to detect and alert gender bias in text generation. Consider sentences that overly associate one gender with a certain role as biased.",
+    "function_prototype": {
+        "function_name": "detect_gender_bias",
+        "parameters": [
+            {
+                "name": "text",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "text": "The nurse is she."
+            },
+            "expected_output": {
+                "output": "Bias detected"
+            }
+        }
+    ],
+    "tags": ["Ethics", "Bias Detection"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'detect_gender_bias' that identifies gender bias in a given text and returns a relevant message if bias is detected.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text": "The nurse is she."
+                    },
+                    "expected_output": {
+                        "output": "Bias detected"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'detect_gender_bias' that inspects a provided text for gender bias, particularly sentences that associate one gender with a specific role. If gender bias is detected, the function should return 'Bias detected'.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text": "The nurse is she."
+                    },
+                    "expected_output": {
+                        "output": "Bias detected"
+                    }
+                }
+            ]
+        }
+    ]
+}

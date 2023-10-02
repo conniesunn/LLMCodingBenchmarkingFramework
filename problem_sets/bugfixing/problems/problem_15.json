@@ -1,0 +1,71 @@
+{
+    "identifier": "problem_15",
+    "description": "Design a function to perform one-hot encoding for a small set of words. Assume a fixed vocabulary for simplicity.",
+    "function_prototype": {
+        "function_name": "one_hot",
+        "parameters": [
+            {
+                "name": "word",
+                "type": "str"
+            },
+            {
+                "name": "vocab",
+                "type": "List[str]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "List[int]"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "word": "AI",
+                "vocab": ["Generative", "AI", "is", "fun"]
+            },
+            "expected_output": {
+                "output": [0, 1, 0, 0]
+            }
+        }
+    ],
+    "tags": [
+        "Data Encoding",
+        "Basic Algorithms"
+    ],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'one_hot' that encodes a given word using one-hot encoding based on a fixed vocabulary.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "word": "AI",
+                        "vocab": ["Generative", "AI", "is", "fun"]
+                    },
+                    "expected_output": {
+                        "output": [0, 1, 0, 0]
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'one_hot' that takes a string 'word' and a list 'vocab' as its arguments. The function should return a list of integers representing the one-hot encoding of the word based on the vocabulary. The vocabulary list contains unique words and the one-hot encoding should reflect the index of the word in the vocabulary.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "word": "AI",
+                        "vocab": ["Generative", "AI", "is", "fun"]
+                    },
+                    "expected_output": {
+                        "output": [0, 1, 0, 0]
+                    }
+                }
+            ]
+        }
+    ]
+}

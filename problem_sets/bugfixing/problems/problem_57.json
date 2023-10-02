@@ -1,0 +1,42 @@
+{
+    "identifier": "problem_57",
+    "description": "Given a sequence of log probabilities, compute the perplexity.",
+    "function_prototype": {
+        "function_name": "perplexity",
+        "parameters": [
+            {"name": "log_probs", "type": "List[float]"}
+        ],
+        "return_values": [{"type": "float"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"log_probs": [-1, -0.5, -2, -0.2]},
+            "expected_output": [2.63903221]  
+        }
+    ],
+    "tags": ["Text", "Metrics", "Evaluation", "Intermediate"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the perplexity function to compute the perplexity for a given sequence of log probabilities.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"log_probs": [-1, -0.5, -2, -0.2]},
+                    "expected_output": [2.63903221]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Write a function named 'perplexity' that takes a single argument: 'log_probs', a list of log probabilities. The function should return the perplexity as a float greater than 1.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"log_probs": [-1, -0.5, -2, -0.2]},
+                    "expected_output": [2.63903221]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_42",
+    "description": "Implement a function that tokenizes a sentence into words using a Seq2Seq approach.",
+    "function_prototype": {
+        "function_name": "tokenize",
+        "parameters": [
+            {
+                "name": "sentence",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "List[str]"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "sentence": "hello world"
+            },
+            "expected_output": {
+                "output": ["hello", "world"]
+            }
+        }
+    ],
+    "tags": ["NLP", "Tokenization", "Seq2Seq"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'tokenize' that breaks a given sentence into individual words.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "sentence": "hello world"
+                    },
+                    "expected_output": {
+                        "output": ["hello", "world"]
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'tokenize' that uses a Seq2Seq model to split a given sentence 'sentence' into its constituent words. The function should return a list of words.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "sentence": "hello world"
+                    },
+                    "expected_output": {
+                        "output": ["hello", "world"]
+                    }
+                }
+            ]
+        }
+    ]
+}

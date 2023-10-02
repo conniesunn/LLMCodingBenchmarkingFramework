@@ -1,0 +1,55 @@
+{
+    "identifier": "problem_62",
+    "description": "Implement the epsilon-greedy strategy for action selection.",
+    "function_prototype": {
+        "function_name": "epsilon_greedy",
+        "parameters": [
+            {"name": "Q_state", "type": "List[float]"},
+            {"name": "epsilon", "type": "float", "default": "0.1"}
+        ],
+        "return_values": [{"type": "str"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"Q_state": [10, 5], "epsilon": 1},
+            "expected_output": ["stay", "move"]
+        },
+        {
+            "input": {"Q_state": [10, 5], "epsilon": 0},
+            "expected_output": ["stay"]
+        }
+    ],
+    "tags": ["Reinforcement Learning", "Epsilon Greedy", "Action Selection", "Intermediate"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the epsilon_greedy function to perform epsilon-greedy action selection based on Q-values and epsilon.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"Q_state": [10, 5], "epsilon": 1},
+                    "expected_output": ["stay", "move"]
+                },
+                {
+                    "input": {"Q_state": [10, 5], "epsilon": 0},
+                    "expected_output": ["stay"]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Write a function named 'epsilon_greedy' that takes two arguments: 'Q_state' which is a list containing Q-values for actions 'stay' and 'move', and 'epsilon' which is the probability to explore a random action. The function should return either 'stay' or 'move' based on the epsilon-greedy strategy.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"Q_state": [10, 5], "epsilon": 1},
+                    "expected_output": ["stay", "move"]
+                },
+                {
+                    "input": {"Q_state": [10, 5], "epsilon": 0},
+                    "expected_output": ["stay"]
+                }
+            ]
+        }
+    ]
+}

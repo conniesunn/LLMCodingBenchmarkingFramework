@@ -1,0 +1,64 @@
+{
+    "identifier": "problem_17",
+    "description": "Design a basic discriminator for a Generative Adversarial Network. Given an input, it should distinguish if it's real or fake. For this task, mock real and fake inputs.",
+    "function_prototype": {
+        "function_name": "discriminator",
+        "parameters": [
+            {
+                "name": "input_data",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "input_data": "RealData"
+            },
+            "expected_output": {
+                "output": "Real"
+            }
+        }
+    ],
+    "tags": [
+        "Generative Adversarial Networks",
+        "Basic Algorithms"
+    ],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'discriminator' that acts as a basic discriminator for a GAN to distinguish if an input is real or fake.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "input_data": "RealData"
+                    },
+                    "expected_output": {
+                        "output": "Real"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'discriminator' that takes a string 'input_data' as its argument. The function should return 'Real' if the input is considered real and 'Fake' otherwise. For this task, mock the real and fake inputs.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "input_data": "RealData"
+                    },
+                    "expected_output": {
+                        "output": "Real"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "identifier": "problem_60",
+    "description": "Given two sets, compute the Jaccard Similarity.",
+    "function_prototype": {
+        "function_name": "jaccard_similarity",
+        "parameters": [
+            {"name": "set1", "type": "Set[int]"},
+            {"name": "set2", "type": "Set[int]"}
+        ],
+        "return_values": [{"type": "float"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "set1": [1, 2, 3],
+                "set2": [2, 3, 4]
+            },
+            "expected_output": [0.5]
+        }
+    ],
+    "tags": ["Evaluation", "Metrics", "Similarity", "Sets", "Jaccard", "Intermediate"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the jaccard_similarity function to compute the Jaccard Similarity between two sets.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "set1": [1, 2, 3],
+                        "set2": [2, 3, 4]
+                    },
+                    "expected_output": [0.5]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Write a function named 'jaccard_similarity' that takes two arguments: 'set1' and 'set2', both of which are sets of integers. The function should return a float representing the Jaccard Similarity between the two sets. The Jaccard Similarity is calculated as the size of the intersection divided by the size of the union of the two sets.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "set1": [1, 2, 3],
+                        "set2": [2, 3, 4]
+                    },
+                    "expected_output": [0.5]
+                }
+            ]
+        }
+    ]
+}

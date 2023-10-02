@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_25",
+    "description": "Implement a function that returns a predefined caption for a given input image. For this task, the image will be represented as a string label.",
+    "function_prototype": {
+        "function_name": "caption_generator",
+        "parameters": [
+            {
+                "name": "image_label",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "image_label": "cat"
+            },
+            "expected_output": {
+                "output": "A cat"
+            }
+        }
+    ],
+    "tags": ["Image Processing", "Text Generation"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'caption_generator' that provides a predefined caption for a given image label.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image_label": "cat"
+                    },
+                    "expected_output": {
+                        "output": "A cat"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'caption_generator' that takes a string 'image_label' as its argument. The function should return a predefined caption corresponding to the given image label. For instance, if the label is 'cat', the function should return 'A cat'.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image_label": "cat"
+                    },
+                    "expected_output": {
+                        "output": "A cat"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "identifier": "problem_18",
+    "description": "Design a function that generates random noise of a given length.",
+    "function_prototype": {
+        "function_name": "generate_noise",
+        "parameters": [
+            {
+                "name": "length",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "List[float]"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "length": 3
+            },
+            "expected_output": {
+                "output": [0.12, 0.75, 0.33]
+            }
+        }
+    ],
+    "tags": [
+        "Random Generators",
+        "Basic Algorithms"
+    ],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'generate_noise' that produces random noise of a specified length.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "length": 3
+                    },
+                    "expected_output": {
+                        "output": [0.12, 0.75, 0.33]
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'generate_noise' that takes an integer 'length' as its argument. The function should return a list of random floating-point numbers between 0 and 1, of the given length.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "length": 3
+                    },
+                    "expected_output": {
+                        "output": [0.12, 0.75, 0.33]
+                    }
+                }
+            ]
+        }
+    ]
+}

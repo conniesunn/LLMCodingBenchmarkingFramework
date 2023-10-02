@@ -1,0 +1,58 @@
+{
+    "identifier": "problem_76",
+    "description": "Given two vectors, Q (query) and K (key), implement an attention scoring function using dot product.",
+    "function_prototype": {
+        "function_name": "attention_score",
+        "input_parameters": [
+            {
+                "name": "Q",
+                "type": "numpy.ndarray"
+            },
+            {
+                "name": "K",
+                "type": "numpy.ndarray"
+            }
+        ],
+        "output_type": "float or int"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "Q": [1, 2],
+                "K": [2, 3]
+            },
+            "expected_output_type": "float or int"
+        }
+    ],
+    "tags": ["Attention Mechanism", "Neural Networks"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'attention_score' function that calculates the dot product between two vectors, Q (query) and K (key), representing an attention scoring mechanism. The function should return the resulting score.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "Q": [1, 2],
+                        "K": [2, 3]
+                    },
+                    "expected_output_type": "float or int"
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In the context of neural networks, particularly transformers, attention mechanisms are used to weigh the significance of different parts of the input data. One common way to compute attention scores is using the dot product between a query (Q) and a key (K). Your task is to write a function 'attention_score' that takes in two vectors (numpy arrays) Q and K, and returns their dot product as an attention score. Ensure your function works efficiently with numpy arrays.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "Q": [1, 2],
+                        "K": [2, 3]
+                    },
+                    "expected_output_type": "float or int"
+                }
+            ]
+        }
+    ]
+}

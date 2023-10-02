@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_48",
+    "description": "Given a dataset, highlight columns that might contain sensitive personal information.",
+    "function_prototype": {
+        "function_name": "identify_sensitive_columns",
+        "parameters": [
+            {
+                "name": "data",
+                "type": "dict"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "List[str]"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "data": {"name": ["John"], "age": [25], "SSN": ["XXX-XX-XXXX"]}
+            },
+            "expected_output": {
+                "output": ["name", "SSN"]
+            }
+        }
+    ],
+    "tags": ["Data Privacy", "Ethics"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'identify_sensitive_columns' that identifies columns in a dataset containing sensitive information.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "data": {"name": ["John"], "age": [25], "SSN": ["XXX-XX-XXXX"]}
+                    },
+                    "expected_output": {
+                        "output": ["name", "SSN"]
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'identify_sensitive_columns' that evaluates a dataset for columns that might contain sensitive personal information. The function should return a list of column names that are deemed sensitive.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "data": {"name": ["John"], "age": [25], "SSN": ["XXX-XX-XXXX"]}
+                    },
+                    "expected_output": {
+                        "output": ["name", "SSN"]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "identifier": "problem_79",
+    "description": "Implement a function to add positional encoding to a given matrix.",
+    "function_prototype": {
+        "function_name": "positional_encoding",
+        "input_parameters": [
+            {
+                "name": "matrix",
+                "type": "numpy.ndarray"
+            },
+            {
+                "name": "d_model",
+                "type": "int"
+            }
+        ],
+        "output_type": "numpy.ndarray"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "matrix": [[1, 2, 3], [4, 5, 6]],
+                "d_model": 3
+            },
+            "expected_output_shape": [2, 3]
+        }
+    ],
+    "tags": ["Transformer", "Positional Encoding", "Neural Networks"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'positional_encoding' function that computes positional encodings for a given matrix. The function should return a matrix with the positional encodings.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "matrix": [[1, 2, 3], [4, 5, 6]],
+                        "d_model": 3
+                    },
+                    "expected_output_shape": [2, 3]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Positional encoding is an important component of the Transformer architecture, allowing the model to consider the order of elements. Your task is to implement the 'positional_encoding' function that computes the positional encoding for a given matrix and dimension 'd_model'. Ensure your function handles numpy arrays efficiently and returns a matrix with the positional encodings.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "matrix": [[1, 2, 3], [4, 5, 6]],
+                        "d_model": 3
+                    },
+                    "expected_output_shape": [2, 3]
+                }
+            ]
+        }
+    ]
+}

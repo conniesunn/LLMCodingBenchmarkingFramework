@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_11",
+    "description": "Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work.",
+    "function_prototype": {
+        "function_name": "Codec",
+        "parameters": [
+            {
+                "name": "root",
+                "type": "TreeNode"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            },
+            {
+                "type": "TreeNode"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "root": "1,2,3,null,null,4,5"
+            },
+            "expected_output": {
+                "output": "1,2,3,null,null,4,5"
+            }
+        }
+    ],
+    "tags": [
+        "Trees",
+        "Design"
+    ],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement an algorithm to serialize and deserialize a binary tree. You need to support methods serialize and deserialize.",
+            "genericize": false,
+            "sample_inputs_outputs": []
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design an algorithm that can serialize a binary tree into a string and then deserialize that string back into the original binary tree. The method of serialization and deserialization is up to you, but it should be able to reconstruct the original tree.",
+            "genericize": true,
+            "sample_inputs_outputs": []
+        }
+    ]
+}

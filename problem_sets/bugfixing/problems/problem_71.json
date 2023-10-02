@@ -1,0 +1,76 @@
+{
+    "identifier": "problem_71",
+    "description": "Given two matrices, Q (queries) and K (keys), implement the dot-product attention mechanism. Normalize the scores using a softmax.",
+    "function_prototype": {
+        "function_name": "dot_product_attention",
+        "input_parameters": [
+            {
+                "name": "Q",
+                "type": "2D numpy array"
+            },
+            {
+                "name": "K",
+                "type": "2D numpy array"
+            }
+        ],
+        "output_type": "2D numpy array"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "Q": [
+                    [1, 2],
+                    [2, 3]
+                ],
+                "K": [
+                    [1, 2],
+                    [2, 3]
+                ]
+            },
+            "expected_output": "2D_array_with_sum_2"
+        }
+    ],
+    "tags": ["Attention Mechanism", "Dot-Product", "Softmax", "Neural Networks"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'dot_product_attention' function that takes two matrices, Q (queries) and K (keys), and returns the dot-product attention mechanism output. Normalize the scores using a softmax. Your output should be a 2D numpy array whose elements sum up to 2.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "Q": [
+                            [1, 2],
+                            [2, 3]
+                        ],
+                        "K": [
+                            [1, 2],
+                            [2, 3]
+                        ]
+                    },
+                    "expected_output": "2D_array_with_sum_2"
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "The dot-product attention mechanism is a foundational component in many neural network architectures, especially in transformers. The task here is to devise a function named 'dot_product_attention' that intakes two matrices, namely Q (queries) and K (keys). This function should compute the dot-product between these matrices and subsequently normalize the scores utilizing a softmax function. The function should return a 2D numpy array, and it's crucial to ensure that the sum of the elements in this output array equals 2.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "Q": [
+                            [1, 2],
+                            [2, 3]
+                        ],
+                        "K": [
+                            [1, 2],
+                            [2, 3]
+                        ]
+                    },
+                    "expected_output": "2D_array_with_sum_2"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_40",
+    "description": "Given a DNA sequence, implement a Seq2Seq function that converts it into an RNA sequence.",
+    "function_prototype": {
+        "function_name": "dna_to_rna",
+        "parameters": [
+            {
+                "name": "dna_seq",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "dna_seq": "ATGC"
+            },
+            "expected_output": {
+                "output": "AUGC"
+            }
+        }
+    ],
+    "tags": ["Biology", "DNA RNA Conversion", "Seq2Seq"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'dna_to_rna' that converts a given DNA sequence to its corresponding RNA sequence.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "dna_seq": "ATGC"
+                    },
+                    "expected_output": {
+                        "output": "AUGC"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'dna_to_rna' that uses a Seq2Seq model to convert a DNA sequence into an RNA sequence. The function should take a string 'dna_seq' representing the DNA sequence and return the corresponding RNA sequence as a string.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "dna_seq": "ATGC"
+                    },
+                    "expected_output": {
+                        "output": "AUGC"
+                    }
+                }
+            ]
+        }
+    ]
+}

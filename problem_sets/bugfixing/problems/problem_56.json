@@ -1,0 +1,52 @@
+{
+    "identifier": "problem_56",
+    "description": "Given true binary labels and predicted probabilities, compute the AUC-ROC score.",
+    "function_prototype": {
+        "function_name": "auc_roc",
+        "parameters": [
+            {"name": "y_true", "type": "List[int]"},
+            {"name": "y_scores", "type": "List[float]"}
+        ],
+        "return_values": [{"type": "float"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "y_true": [1, 0, 1, 0],
+                "y_scores": [0.9, 0.1, 0.8, 0.2]
+            },
+            "expected_output": [0.875]  
+        }
+    ],
+    "tags": ["Metrics", "Evaluation", "Intermediate"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the auc_roc function to compute the AUC-ROC score for given true binary labels and predicted probabilities.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "y_true": [1, 0, 1, 0],
+                        "y_scores": [0.9, 0.1, 0.8, 0.2]
+                    },
+                    "expected_output": [0.875]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Write a function named 'auc_roc' that takes two arguments: 'y_true', a list of true binary labels, and 'y_scores', a list of predicted probabilities. The function should return the AUC-ROC score as a float between 0 and 1.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "y_true": [1, 0, 1, 0],
+                        "y_scores": [0.9, 0.1, 0.8, 0.2]
+                    },
+                    "expected_output": [0.875]
+                }
+            ]
+        }
+    ]
+}

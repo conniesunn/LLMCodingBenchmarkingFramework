@@ -1,0 +1,71 @@
+{
+    "identifier": "problem_22",
+    "description": "Design a function to generate text using trigrams. Given a seed of two words, it should generate the next word based on trigram frequency.",
+    "function_prototype": {
+        "function_name": "generate_text_trigram",
+        "parameters": [
+            {
+                "name": "corpus",
+                "type": "str"
+            },
+            {
+                "name": "seed",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "corpus": "I love AI. I love coding. I love machine learning.",
+                "seed": "I love"
+            },
+            "expected_output": {
+                "output": "AI"
+            }
+        }
+    ],
+    "tags": [
+        "Text Generation",
+        "Advanced Algorithms"
+    ],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'generate_text_trigram' that produces text using trigram frequency from a given corpus.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "corpus": "I love AI. I love coding. I love machine learning.",
+                        "seed": "I love"
+                    },
+                    "expected_output": {
+                        "output": "AI"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'generate_text_trigram' that takes a string 'corpus' and a string 'seed' as its arguments. The function should return the most frequent word that follows the given 'seed' in the 'corpus' using trigram frequency.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "corpus": "I love AI. I love coding. I love machine learning.",
+                        "seed": "I love"
+                    },
+                    "expected_output": {
+                        "output": "AI"
+                    }
+                }
+            ]
+        }
+    ]
+}

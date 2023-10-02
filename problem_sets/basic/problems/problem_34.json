@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_34",
+    "description": "Implement a Seq2Seq model that translates English text to French. For the purpose of this test, you can use a simplified dictionary for translation.",
+    "function_prototype": {
+        "function_name": "translate_to_french",
+        "parameters": [
+            {
+                "name": "english_text",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "english_text": "hello world"
+            },
+            "expected_output": {
+                "output": "bonjour monde"
+            }
+        }
+    ],
+    "tags": ["NLP", "Translation", "Seq2Seq"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'translate_to_french' that translates English text to French using a predefined dictionary.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "english_text": "hello world"
+                    },
+                    "expected_output": {
+                        "output": "bonjour monde"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'translate_to_french' that takes a single argument 'english_text' which is a string. This function should use a Seq2Seq model and a simplified dictionary to translate the provided English text to French. The function should return the translated text as a string.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "english_text": "hello world"
+                    },
+                    "expected_output": {
+                        "output": "bonjour monde"
+                    }
+                }
+            ]
+        }
+    ]
+}

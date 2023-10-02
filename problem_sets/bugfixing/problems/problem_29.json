@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_29",
+    "description": "Implement a function to generate a Haiku. For simplicity, you can use predefined lines.",
+    "function_prototype": {
+        "function_name": "generate_haiku",
+        "parameters": [
+            {
+                "name": "lines",
+                "type": "List[str]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "lines": ["The sky is so blue", "Roses red and violets too", "I love every hue"]
+            },
+            "expected_output": {
+                "output": "The sky is so blue\nRoses red and violets too\nI love every hue"
+            }
+        }
+    ],
+    "tags": ["Text Generation", "Intermediate"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'generate_haiku' that constructs a haiku from predefined lines.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "lines": ["The sky is so blue", "Roses red and violets too", "I love every hue"]
+                    },
+                    "expected_output": {
+                        "output": "The sky is so blue\nRoses red and violets too\nI love every hue"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Write a function named 'generate_haiku' that takes a list 'lines' as its argument. This list contains lines for constructing a haiku. Your function should concatenate these lines into a single string, using newline characters to separate them, and then return the resulting haiku.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "lines": ["The sky is so blue", "Roses red and violets too", "I love every hue"]
+                    },
+                    "expected_output": {
+                        "output": "The sky is so blue\nRoses red and violets too\nI love every hue"
+                    }
+                }
+            ]
+        }
+    ]
+}

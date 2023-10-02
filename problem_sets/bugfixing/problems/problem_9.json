@@ -1,0 +1,35 @@
+{
+	"identifier": "problem_9",
+	"description": "Given an array of intervals, merge any overlapping intervals.",
+	"function_prototype": {
+		"function_name": "merge",
+		"parameters": [
+			{"name": "intervals", "type": "List[List[int]]"}
+		],
+		"return_values": [
+			{"type": "List[List[int]]"}
+		]
+	},
+	"correctness_test_suite": [
+		{"input": {"intervals": [[1,3],[2,6],[8,10],[15,18]]}, "expected_output": [[[1,6],[8,10],[15,18]]]}
+	],
+	"tags": ["Arrays", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",			
+			"prompt": "Implement the 'merge' function that takes a list of intervals and merges any overlapping intervals, returning the resulting list of intervals.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"intervals": [[1,3],[2,6],[8,10],[15,18]]}, "expected_output": [[[1,6],[8,10],[15,18]]]}
+			]
+		},
+		{
+			"prompt_id": "detailed_prompt",
+			"prompt": "Write a function named 'merge' that takes a list of intervals represented as pairs of integers. The function should merge any overlapping intervals and return the merged intervals in a list. Each interval is a list of two integers.",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"intervals": [[1,3],[2,6],[8,10],[15,18]]}, "expected_output": [[[1,6],[8,10],[15,18]]]}
+			]
+		}
+	]
+}

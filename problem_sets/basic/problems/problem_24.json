@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_24",
+    "description": "Given a 2D list of pixel values (0 or 1), implement a function to reduce noise. If a pixel is surrounded by more than 5 '0's, set it to 0.",
+    "function_prototype": {
+        "function_name": "reduce_noise",
+        "parameters": [
+            {
+                "name": "image",
+                "type": "List[List[int]]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "List[List[int]]"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "image": [[1, 1, 0], [0, 1, 0], [0, 0, 0]]
+            },
+            "expected_output": {
+                "output": [[1, 0, 0], [0, 0, 0], [0, 0, 0]]
+            }
+        }
+    ],
+    "tags": ["Image Processing", "Noise Reduction"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'reduce_noise' that processes a 2D list of pixel values and reduces noise based on surrounding pixel values.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image": [[1, 1, 0], [0, 1, 0], [0, 0, 0]]
+                    },
+                    "expected_output": {
+                        "output": [[1, 0, 0], [0, 0, 0], [0, 0, 0]]
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'reduce_noise' that takes a 2D list 'image' representing pixel values (either 0 or 1). The function should process the image to reduce noise. Specifically, if a pixel has more than 5 neighboring pixels with a value of 0, it should be set to 0. The function should return the processed 2D list.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image": [[1, 1, 0], [0, 1, 0], [0, 0, 0]]
+                    },
+                    "expected_output": {
+                        "output": [[1, 0, 0], [0, 0, 0], [0, 0, 0]]
+                    }
+                }
+            ]
+        }
+    ]
+}

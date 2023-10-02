@@ -1,0 +1,41 @@
+{
+    "identifier": "problem_83",
+    "description": "Given a list of data items, split the dataset into training and testing sets using the 80-20 rule.",
+    "function_prototype": {
+        "function_name": "split_dataset",
+        "input_parameters": [
+            {
+                "name": "data",
+                "type": "List[Any]"
+            }
+        ],
+        "output_type": "Tuple[List[Any], List[Any]]"
+    },
+    "correctness_test_suite": [
+        {
+        }
+    ],
+    "tags": ["Data Processing", "Splitting"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'split_dataset' function that takes in a list of data items. The function should split the dataset into training and testing sets based on the 80-20 rule. Return the two split datasets as a tuple (train, test).",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                   
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In machine learning and data analysis, splitting datasets into training and testing sets is essential for validating the performance of a model. The common practice is to split the dataset using the 80-20 rule, where 80% of the data is used for training, and the remaining 20% is used for testing. Given a list of data items, design a function named 'split_dataset'. This function should segregate the dataset into training and testing sets based on the aforementioned rule. The function should return the split datasets as a tuple in the order (train, test).",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    
+                }
+            ]
+        }
+    ]
+}

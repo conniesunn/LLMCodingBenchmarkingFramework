@@ -1,0 +1,66 @@
+{
+    "identifier": "problem_28",
+    "description": "Implement a function that generates text based on a given seed character. Your function should mimic a character-level generation where the next character depends on the previous one. For simplicity, you may use a predefined dictionary.",
+    "function_prototype": {
+        "function_name": "char_gen",
+        "parameters": [
+            {
+                "name": "seed",
+                "type": "str"
+            },
+            {
+                "name": "length",
+                "type": "int",
+                "default": 4
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "seed": "a"
+            },
+            "expected_output": {
+                "output": "abca"
+            }
+        }
+    ],
+    "tags": ["Text Generation", "Character-level"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Design a function 'char_gen' that, given a seed character, generates a sequence based on a predefined pattern.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "seed": "a"
+                    },
+                    "expected_output": {
+                        "output": "abca"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Create a function named 'char_gen' that accepts a string 'seed' and an integer 'length'. The function should generate a sequence of characters where each next character is determined by the previous one, using a predefined mapping. The generated sequence should have a length as specified by the 'length' argument.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "seed": "a"
+                    },
+                    "expected_output": {
+                        "output": "abca"
+                    }
+                }
+            ]
+        }
+    ]
+}

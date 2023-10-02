@@ -1,0 +1,61 @@
+{
+    "identifier": "problem_35",
+    "description": "Using Seq2Seq, implement a function that reverses the order of words in a sentence.",
+    "function_prototype": {
+        "function_name": "reverse_words",
+        "parameters": [
+            {
+                "name": "sentence",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "sentence": "hello world"
+            },
+            "expected_output": {
+                "output": "world hello"
+            }
+        }
+    ],
+    "tags": ["NLP", "Seq2Seq", "Text Manipulation"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement a function 'reverse_words' that reverses the order of words in a given sentence.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "sentence": "hello world"
+                    },
+                    "expected_output": {
+                        "output": "world hello"
+                    }
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Design a function named 'reverse_words' that takes a single argument 'sentence', which is a string. The function should use a Seq2Seq model to reverse the order of words in the given sentence. It should return the modified sentence as a string.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "sentence": "hello world"
+                    },
+                    "expected_output": {
+                        "output": "world hello"
+                    }
+                }
+            ]
+        }
+    ]
+}

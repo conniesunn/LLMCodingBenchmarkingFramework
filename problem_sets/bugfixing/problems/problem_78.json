@@ -1,0 +1,51 @@
+{
+    "identifier": "problem_78",
+    "description": "Implement a basic self-attention mechanism for a given matrix X.",
+    "function_prototype": {
+        "function_name": "self_attention",
+        "input_parameters": [
+            {
+                "name": "X",
+                "type": "numpy.ndarray"
+            }
+        ],
+        "output_type": "numpy.ndarray"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "X": [[1, 2], [2, 3], [3, 4]]
+            },
+            "expected_output_shape": [3, 2]
+        }
+    ],
+    "tags": ["Attention Mechanism", "Neural Networks"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'self_attention' function that calculates self-attention values for a given matrix X. The function should return a matrix with the self-attention values.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "X": [[1, 2], [2, 3], [3, 4]]
+                    },
+                    "expected_output_shape": [3, 2]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Self-attention is a crucial mechanism in modern neural networks, allowing a model to focus on different parts of its input. Your task is to implement the 'self_attention' function that computes self-attention values for a matrix X. Ensure your function handles numpy arrays efficiently and returns a matrix with self-attention values.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "X": [[1, 2], [2, 3], [3, 4]]
+                    },
+                    "expected_output_shape": [3, 2]
+                }
+            ]
+        }
+    ]
+}

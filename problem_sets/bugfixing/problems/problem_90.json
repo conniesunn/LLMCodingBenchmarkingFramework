@@ -1,0 +1,51 @@
+{
+    "identifier": "problem_90",
+    "description": "The task is to flip a 2D numpy array representing an image horizontally.",
+    "function_prototype": {
+        "function_name": "flip_image",
+        "input_parameters": [
+            {
+                "name": "image_2d",
+                "type": "2D numpy array"
+            }
+        ],
+        "output_type": "2D numpy array"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "image_2d": [[1, 2], [3, 4]]
+            },
+            "expected_output": [[2, 1], [4, 3]]
+        }
+    ],
+    "tags": ["Image Processing", "Data Augmentation"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'flip_image' function that takes a 2D numpy array representing an image and returns the image flipped horizontally. For instance, for the input image [[1, 2], [3, 4]], the function should return [[2, 1], [4, 3]].",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image_2d": [[1, 2], [3, 4]]
+                    },
+                    "expected_output": [[2, 1], [4, 3]]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In image processing and data augmentation, flipping images can be a useful technique to increase the diversity of the training set. Your task is to implement the 'flip_image' function that receives a 2D numpy array representing an image. The function should flip the image horizontally. For instance, for the given image [[1, 2], [3, 4]], the horizontally flipped image will be [[2, 1], [4, 3]]. Ensure the returned image maintains the same shape as the input.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image_2d": [[1, 2], [3, 4]]
+                    },
+                    "expected_output": [[2, 1], [4, 3]]
+                }
+            ]
+        }
+    ]
+}

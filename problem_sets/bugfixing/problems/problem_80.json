@@ -1,0 +1,65 @@
+{
+    "identifier": "problem_80",
+    "description": "Implement layer normalization for a given matrix with parameters gamma and beta.",
+    "function_prototype": {
+        "function_name": "layer_normalization",
+        "input_parameters": [
+            {
+                "name": "matrix",
+                "type": "numpy.ndarray"
+            },
+            {
+                "name": "gamma",
+                "type": "numpy.ndarray"
+            },
+            {
+                "name": "beta",
+                "type": "numpy.ndarray"
+            }
+        ],
+        "output_type": "numpy.ndarray"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "matrix": [[1, 2, 3], [4, 5, 6]],
+                "gamma": [1, 1, 1],
+                "beta": [0, 0, 0]
+            },
+            "expected_output_shape": [2, 3]
+        }
+    ],
+    "tags": ["Layer Normalization", "Attention", "Neural Networks"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'layer_normalization' function to perform layer normalization on a given matrix using provided gamma and beta parameters. Ensure the output has the same shape as the input matrix.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "matrix": [[1, 2, 3], [4, 5, 6]],
+                        "gamma": [1, 1, 1],
+                        "beta": [0, 0, 0]
+                    },
+                    "expected_output_shape": [2, 3]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Layer normalization is an important technique in neural networks that standardizes the activations in a layer for each training instance. Your task is to implement the 'layer_normalization' function which takes in a matrix, gamma, and beta parameters, and returns the normalized matrix. Ensure that your function works efficiently with numpy arrays and the output has the same shape as the input.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "matrix": [[1, 2, 3], [4, 5, 6]],
+                        "gamma": [1, 1, 1],
+                        "beta": [0, 0, 0]
+                    },
+                    "expected_output_shape": [2, 3]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "identifier": "problem_82",
+    "description": "Given an image in the form of a 2D numpy array, normalize the image values to range between 0 and 1.",
+    "function_prototype": {
+        "function_name": "normalize_image",
+        "input_parameters": [
+            {
+                "name": "image_array",
+                "type": "numpy.ndarray"
+            }
+        ],
+        "output_type": "numpy.ndarray"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "image_array": [[100, 150], [255, 0]]
+            },
+            "expected_output": [[0.39215686, 0.58823529], [1.0, 0.0]]
+        }
+    ],
+    "tags": ["Image Processing", "Normalization"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'normalize_image' function that takes in a 2D numpy array representing an image. The function should normalize the image values to range between 0 and 1. Return the normalized image array.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image_array": [[100, 150], [255, 0]]
+                    },
+                    "expected_output": [[0.39215686, 0.58823529], [1.0, 0.0]]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Image normalization is crucial in various image processing tasks, especially in machine learning, where we want to scale the input data before feeding it to the model. In this problem, you are given an image in the form of a 2D numpy array. Your task is to design a function 'normalize_image' that will normalize the pixel values of the image to range between 0 and 1. The output should be a 2D numpy array with the normalized values.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image_array": [[100, 150], [255, 0]]
+                    },
+                    "expected_output": [[0.39215686, 0.58823529], [1.0, 0.0]]
+                }
+            ]
+        }
+    ]
+}
