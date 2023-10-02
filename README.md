@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LLM Coding Ability Benchmark Suite
 
 The LLM (Large Language Model) Coding Ability Benchmark Suite is designed to evaluate the problem-solving and code generation capabilities of AI models, particularly in the domain of programming challenges. This suite comprises three main phases: Problem Definition, Solution Generation, and Grading. Each phase is structured to facilitate a robust evaluation of AI models, ensuring that the generated solutions not only solve the problems as required but also adhere to specified criteria and standards.
@@ -234,3 +235,6 @@ This structured setup facilitates the organization of problems, solutions, and g
 ## Regenerating the Suite Itself Using LLMs
 
 See [regenerate_framework.py](regenerate_framework.py) for an early look at an attempt to regenerate this testing suite by prompting an LLM!
+=======
+# CombinedRunningBenchmark
+>>>>>>> 0c321f931200d0cc7a23ebabf9b5cc318c16239b
