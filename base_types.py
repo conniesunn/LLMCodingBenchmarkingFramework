@@ -1,6 +1,7 @@
 from typing import Dict, List, Union, Optional, Any
 import ast
 import json
+import re
 
 # Define necessary types
 ProblemID = str
@@ -230,7 +231,7 @@ class TestCase:
 	def __str__(self) -> str:
 		inputs_str = ', '.join(f'{k} = {v}' for k, v in self.parameters.items())
 		expected_output_str = ', '.join(f'{v}' for v in self.expected_output)
-		return f'Input: {inputs_str}\nExpected Output: {expected_output_str}'
+		return f'Input: {inputs_str}; Expected Output: {expected_output_str}'
 
 
 class FunctionPrototype:
@@ -265,17 +266,21 @@ class FunctionPrototype:
 	
 	def get_python_type(self, param_type, input):
 		# Based on the type, convert the string representation to the appropriate Python object
+		param_type = re.search(r'^Optional\[(.*)\]$', param_type).group(1) if re.search(r'^Optional\[(.*)\]$', param_type) else param_type
+		
 		if param_type == "int":
 			return int(input)
 		elif param_type == "float":
 			return float(input)
 		elif param_type == "str":
-			return ast.literal_eval(input)
+			return ast.literal_eval(f'"{input}"')  # Adding double quotes around the string
 		elif param_type == "bool":
 			return input.lower() == "true"
-		elif '[' in param_type:
+		elif '[' in param_type and isinstance(input, str):  # Ensure input is a string
 			# Using ast.literal_eval to safely evaluate the string representation
 			return ast.literal_eval(input)
+		else:
+			return input  # Return the input as-is for unsupported types or if input is not a string
 		
 	def get_parameter_values(self, test_case: TestCase) -> Dict[str, Any]:
 		converted_params = {}
@@ -345,7 +350,7 @@ class Prompt:
 	def __init__(self, data: Dict[str, any]):
 		self.prompt_id = data["prompt_id"]
 		self.prompt = data["prompt"]
-		self.genericize = data["genericize"]
+		self.genericize = data.get("genericize", None)
 		self.sample_inputs_outputs = [TestCase(tc) for tc in data.get("sample_inputs_outputs", [])]
 		self.input_code = data.get("input_code", None)
 	
@@ -445,8 +450,7 @@ class ProblemDefinition:
 		correctness_test_suite_str = '\n    '.join(str(test_case) for test_case in self.correctness_test_suite) if self.correctness_test_suite else "No Test Cases"
 		tags_str = ', '.join(self.tags) if self.tags else "No Tags"
 		return (
-			f"ProblemDefinition:\n"
-			f"  Identifier: {self.identifier}\n"
+			f"ProblemDefinition {self.identifier}:\n"
 			f"  Description: {self.description}\n"
 			f"  Prompts:\n    {prompts_str}\n"
 			f"  Function Prototype: {self.function_prototype}\n"
