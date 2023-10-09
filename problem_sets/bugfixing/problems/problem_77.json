@@ -3,7 +3,7 @@
     "description": "Given vectors Q (query) and K (key), and matrices W1 and W2, implement the additive attention mechanism.",
     "function_prototype": {
         "function_name": "additive_attention",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "Q",
                 "type": "numpy.ndarray"
@@ -21,7 +21,7 @@
                 "type": "numpy.ndarray"
             }
         ],
-        "output_type": "float or int"
+        "return_values": [{"type": "float or int"}]
     },
     "correctness_test_suite": [
         {
@@ -31,7 +31,7 @@
                 "W1": [[0.5, 0.3], [0.2, 0.4]],
                 "W2": [[0.1, 0.5], [0.4, 0.2]]
             },
-            "expected_output_type": "float or int"
+            "expected_output": ["float or int"]
         }
     ],
     "tags": ["Attention Mechanism", "Neural Networks"],
@@ -48,7 +48,7 @@
                         "W1": [[0.5, 0.3], [0.2, 0.4]],
                         "W2": [[0.1, 0.5], [0.4, 0.2]]
                     },
-                    "expected_output_type": "float or int"
+                    "expected_output": ["float or int"]
                 }
             ]
         },
@@ -64,7 +64,7 @@
                         "W1": [[0.5, 0.3], [0.2, 0.4]],
                         "W2": [[0.1, 0.5], [0.4, 0.2]]
                     },
-                    "expected_output_type": "float or int"
+                    "expected_output": ["float or int"]
                 }
             ]
         }

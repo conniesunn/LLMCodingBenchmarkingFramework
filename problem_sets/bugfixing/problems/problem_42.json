@@ -20,9 +20,9 @@
             "input": {
                 "sentence": "hello world"
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": ["hello", "world"]
-            }
+            }]
         }
     ],
     "tags": ["NLP", "Tokenization", "Seq2Seq"],
@@ -36,9 +36,9 @@
                     "input": {
                         "sentence": "hello world"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": ["hello", "world"]
-                    }
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "sentence": "hello world"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": ["hello", "world"]
-                    }
+                    }]
                 }
             ]
         }

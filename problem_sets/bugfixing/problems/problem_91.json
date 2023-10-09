@@ -3,13 +3,13 @@
     "description": "The task is to prompt the user for a number, convert it to an integer and then return its square.",
     "function_prototype": {
         "function_name": "square_user_input",
-        "input_parameters": [],
-        "output_type": "int"
+        "parameters": [],
+        "return_values": [{"type": "int"}]
     },
     "correctness_test_suite": [
         {
             "input": {},
-            "expected_output": 25,
+            "expected_output": [25],
             "input_string": "5"
         }
     ],
@@ -22,7 +22,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": 25,
+                    "expected_output": [25],
                     "input_string": "5"
                 }
             ]
@@ -34,7 +34,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": 25,
+                    "expected_output": [25],
                     "input_string": "5"
                 }
             ]

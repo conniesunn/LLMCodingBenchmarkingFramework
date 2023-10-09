@@ -1,0 +1,51 @@
+{
+    "identifier": "problem_74",
+    "description": "Implement a masking function that will return a mask tensor, where positions with value of 1 are masked.",
+    "function_prototype": {
+        "function_name": "create_attention_mask",
+        "parameters": [
+            {
+                "name": "source",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [{"type": "List[int]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "source": [1, 0, 2, 0]
+            },
+            "expected_output": [0, 1, 0, 1]
+        }
+    ],
+    "tags": ["Attention Mechanism", "Masking", "Neural Networks"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'create_attention_mask' function that accepts a list of integers 'source'. Return a mask list, where positions with a value of 1 are masked. The mask will contain 1's where the input list has zeros and 0's elsewhere.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "source": [1, 0, 2, 0]
+                    },
+                    "expected_output": [0, 1, 0, 1]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Attention masks play a crucial role in models like Transformers to avoid attending to certain positions. Design a function 'create_attention_mask' that takes a list 'source'. This function should return a mask list where each position with a value of 0 in the source should be replaced with 1, and all other values should be replaced with 0. For instance, given the list [1, 0, 2, 0], the mask will be [0, 1, 0, 1].",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "source": [1, 0, 2, 0]
+                    },
+                    "expected_output": [0, 1, 0, 1]
+                }
+            ]
+        }
+    ]
+}

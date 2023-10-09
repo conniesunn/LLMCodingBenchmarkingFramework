@@ -25,9 +25,9 @@
                 "corpus": "AI is fun. Generative AI is powerful. AI is transformative.",
                 "word": "AI"
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": "is"
-            }
+            }]
         }
     ],
     "tags": [
@@ -45,9 +45,9 @@
                         "corpus": "AI is fun. Generative AI is powerful. AI is transformative.",
                         "word": "AI"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "is"
-                    }
+                    }]
                 }
             ]
         },
@@ -61,9 +61,9 @@
                         "corpus": "AI is fun. Generative AI is powerful. AI is transformative.",
                         "word": "AI"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "is"
-                    }
+                    }]
                 }
             ]
         }

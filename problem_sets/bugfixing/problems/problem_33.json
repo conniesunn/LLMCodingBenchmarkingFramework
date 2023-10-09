@@ -30,9 +30,9 @@
                 "original_color": "Red",
                 "new_color": "Yellow"
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": [["Yellow", "Green"], ["Blue", "Yellow"]]
-            }
+            }]
         }
     ],
     "tags": ["Image Processing", "Basic Algorithms"],
@@ -48,9 +48,9 @@
                         "original_color": "Red",
                         "new_color": "Yellow"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": [["Yellow", "Green"], ["Blue", "Yellow"]]
-                    }
+                    }]
                 }
             ]
         },
@@ -65,9 +65,9 @@
                         "original_color": "Red",
                         "new_color": "Yellow"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": [["Yellow", "Green"], ["Blue", "Yellow"]]
-                    }
+                    }]
                 }
             ]
         }

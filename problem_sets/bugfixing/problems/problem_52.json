@@ -15,10 +15,10 @@
 			"input": {
 				"story": "Once upon a time. The end."
 			}, 
-			"expected_output_range": {
+			"expected_output": [{
 				"min": 0,
 				"max": 1
-			}
+			}]
 		}
 	],
 	"tags": ["Natural Language Processing", "Metrics", "Text Analysis", "Medium"],
@@ -32,10 +32,10 @@
 					"input": {
 						"story": "Once upon a time. The end."
 					},
-					"expected_output_range": {
+					"expected_output": [{
 						"min": 0,
 						"max": 1
-					}
+					}]
 				}
 			]
 		},
@@ -48,10 +48,10 @@
 					"input": {
 						"story": "Once upon a time. The end."
 					},
-					"expected_output_range": {
+					"expected_output": [{
 						"min": 0,
 						"max": 1
-					}
+					}]
 				}
 			]
 		}

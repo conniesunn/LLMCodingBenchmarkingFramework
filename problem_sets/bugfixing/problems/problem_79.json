@@ -3,7 +3,7 @@
     "description": "Implement a function to add positional encoding to a given matrix.",
     "function_prototype": {
         "function_name": "positional_encoding",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "matrix",
                 "type": "numpy.ndarray"
@@ -13,7 +13,7 @@
                 "type": "int"
             }
         ],
-        "output_type": "numpy.ndarray"
+        "return_values": [{"type": "numpy.ndarray"}]
     },
     "correctness_test_suite": [
         {
@@ -21,7 +21,7 @@
                 "matrix": [[1, 2, 3], [4, 5, 6]],
                 "d_model": 3
             },
-            "expected_output_shape": [2, 3]
+            "expected_output": [2, 3]
         }
     ],
     "tags": ["Transformer", "Positional Encoding", "Neural Networks"],
@@ -36,7 +36,7 @@
                         "matrix": [[1, 2, 3], [4, 5, 6]],
                         "d_model": 3
                     },
-                    "expected_output_shape": [2, 3]
+                    "expected_output": [2, 3]
                 }
             ]
         },
@@ -50,7 +50,7 @@
                         "matrix": [[1, 2, 3], [4, 5, 6]],
                         "d_model": 3
                     },
-                    "expected_output_shape": [2, 3]
+                    "expected_output": [2, 3]
                 }
             ]
         }

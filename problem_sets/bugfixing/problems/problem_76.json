@@ -3,7 +3,7 @@
     "description": "Given two vectors, Q (query) and K (key), implement an attention scoring function using dot product.",
     "function_prototype": {
         "function_name": "attention_score",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "Q",
                 "type": "numpy.ndarray"
@@ -13,7 +13,7 @@
                 "type": "numpy.ndarray"
             }
         ],
-        "output_type": "float or int"
+        "return_values": [{"type": "float or int"}]
     },
     "correctness_test_suite": [
         {
@@ -21,7 +21,7 @@
                 "Q": [1, 2],
                 "K": [2, 3]
             },
-            "expected_output_type": "float or int"
+            "expected_output": ["float or int"]
         }
     ],
     "tags": ["Attention Mechanism", "Neural Networks"],
@@ -36,7 +36,7 @@
                         "Q": [1, 2],
                         "K": [2, 3]
                     },
-                    "expected_output_type": "float or int"
+                    "expected_output": ["float or int"]
                 }
             ]
         },
@@ -50,7 +50,7 @@
                         "Q": [1, 2],
                         "K": [2, 3]
                     },
-                    "expected_output_type": "float or int"
+                    "expected_output": ["float or int"]
                 }
             ]
         }

@@ -25,9 +25,9 @@
             "input": {
                 "seed": "a"
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": "abca"
-            }
+            }]
         }
     ],
     "tags": ["Text Generation", "Character-level"],
@@ -41,9 +41,9 @@
                     "input": {
                         "seed": "a"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "abca"
-                    }
+                    }]
                 }
             ]
         },
@@ -56,9 +56,9 @@
                     "input": {
                         "seed": "a"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "abca"
-                    }
+                    }]
                 }
             ]
         }

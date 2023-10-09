@@ -3,7 +3,7 @@
     "description": "Given two matrices, Q (queries) and K (keys), implement the dot-product attention mechanism. Normalize the scores using a softmax.",
     "function_prototype": {
         "function_name": "dot_product_attention",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "Q",
                 "type": "2D numpy array"
@@ -13,7 +13,7 @@
                 "type": "2D numpy array"
             }
         ],
-        "output_type": "2D numpy array"
+        "return_values": [{"type": "2D numpy array"}]
     },
     "correctness_test_suite": [
         {
@@ -27,7 +27,7 @@
                     [2, 3]
                 ]
             },
-            "expected_output": "2D_array_with_sum_2"
+            "expected_output": ["2D_array_with_sum_2"]
         }
     ],
     "tags": ["Attention Mechanism", "Dot-Product", "Softmax", "Neural Networks"],
@@ -48,7 +48,7 @@
                             [2, 3]
                         ]
                     },
-                    "expected_output": "2D_array_with_sum_2"
+                    "expected_output": ["2D_array_with_sum_2"]
                 }
             ]
         },
@@ -68,7 +68,7 @@
                             [2, 3]
                         ]
                     },
-                    "expected_output": "2D_array_with_sum_2"
+                    "expected_output": ["2D_array_with_sum_2"]
                 }
             ]
         }

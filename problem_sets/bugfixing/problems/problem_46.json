@@ -20,9 +20,9 @@
             "input": {
                 "text": "Old people can't use smartphones."
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": "Age bias detected"
-            }
+            }]
         }
     ],
     "tags": ["Ethics", "Bias Detection"],
@@ -36,9 +36,9 @@
                     "input": {
                         "text": "Old people can't use smartphones."
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "Age bias detected"
-                    }
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "text": "Old people can't use smartphones."
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "Age bias detected"
-                    }
+                    }]
                 }
             ]
         }

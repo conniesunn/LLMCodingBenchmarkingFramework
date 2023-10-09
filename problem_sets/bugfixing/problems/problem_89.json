@@ -3,18 +3,20 @@
     "description": "The task is to balance a dataset in the form of a list where each item is a tuple (feature, label) so that all labels have equal representation. If needed, items can be randomly dropped to achieve balance.",
     "function_prototype": {
         "function_name": "balance_dataset",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "data",
                 "type": "list[tuple[str, str]]"
             }
         ],
-        "output_type": "list[tuple[str, str]]"
+        "return_values": [{"type": "list[tuple[str, str]]"}]
     },
     "correctness_test_suite": [
         {
-
-        
+            "input": {
+                "data": [{"f1": "A"}, {"f2": "A"}, {"f3": "B"}]
+            },
+            "expected_output": [[{"f1": "A"}, {"f3": "B"}], [{"f2": "A"}, {"f3": "B"}]] 
         }
     ],
     "tags": ["Data Balancing", "Dataset"],
@@ -25,7 +27,10 @@
             "genericize": false,
             "sample_inputs_outputs": [
                 {
-  
+                    "input": {
+                        "data": [{"f1": "A"}, {"f2": "A"}, {"f3": "B"}]
+                    },
+                    "expected_output": [["f1", "A"], ["f3", "B"]]
                 }
             ]
         },
@@ -35,7 +40,10 @@
             "genericize": true,
             "sample_inputs_outputs": [
                 {
-
+                    "input": {
+                        "data": [{"f1": "A"}, {"f2": "A"}, {"f3": "B"}]
+                    },
+                    "expected_output": [["f1", "A"], ["f3", "B"]]
                 }
             ]
         }

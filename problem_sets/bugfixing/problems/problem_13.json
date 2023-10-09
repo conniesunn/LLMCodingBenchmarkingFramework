@@ -13,11 +13,11 @@
     "correctness_test_suite": [
         {
             "input": {
-                "head": "<Linked list representation with a cycle>"
+                "head": ""
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": true
-            }
+            }]
         }
     ],
     "tags": ["Linked List", "Two Pointers", "Medium"],
@@ -28,11 +28,10 @@
             "genericize": false,
             "sample_inputs_outputs": [
                 {
-                    "input": {"head": "<Linked list representation with a cycle>"},
-                    "expected_output": {"output": true}
+                    "input": {"head": ""},
+                    "expected_output": [{"output": true}]
                 }
-            ],
-            "input_code": null
+            ]
         },
         {
             "prompt_id": "detailed_prompt",
@@ -40,15 +39,14 @@
             "genericize": true,
             "sample_inputs_outputs": [
                 {
-                    "input": {"head": "<Linked list representation without a cycle>"},
-                    "expected_output": {"output": false}
+                    "input": {"head": ""},
+                    "expected_output": [{"output": false}]
                 },
                 {
-                    "input": {"head": "<Linked list representation with a cycle>"},
-                    "expected_output": {"output": true}
+                    "input": {"head": ""},
+                    "expected_output": [{"output": true}]
                 }
-            ],
-            "input_code": null
+            ]
         }
     ]
 }

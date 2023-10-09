@@ -1,0 +1,51 @@
+{
+    "identifier": "problem_84",
+    "description": "Given a dictionary of data items with some values as None, replace the None values with the average of the other non-None values.",
+    "function_prototype": {
+        "function_name": "handle_missing_values",
+        "input_parameters": [
+            {
+                "name": "data_dict",
+                "type": "Dict[str, Optional[float]]"
+            }
+        ],
+        "output_type": "Dict[str, float]"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "data_dict": {"a": 10, "b": "None", "c": 30}
+            },
+            "expected_output": {"a": 10, "b": 20, "c": 30}
+        }
+    ],
+    "tags": ["Data Cleaning", "Handling Missing Values"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'handle_missing_values' function that takes in a dictionary with some values as None. The function should replace the None values with the average of the other non-None values in the dictionary. Return the updated dictionary.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "data_dict": {"a": 10, "b": "None", "c": 30}
+                    },
+                    "expected_output": {"a": 10, "b": 20, "c": 30}
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In data science, handling missing values is a critical step to ensure the quality of the dataset. You are provided with a dictionary where some of the values are None. Your task is to design a function named 'handle_missing_values' to replace these None values. The replacement value for each None should be the average of the other non-None values in the dictionary. The function should then return the updated dictionary.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "data_dict": {"a": 10, "b": "None", "c": 30}
+                    },
+                    "expected_output": {"a": 10, "b": 20, "c": 30}
+                }
+            ]
+        }
+    ]
+}

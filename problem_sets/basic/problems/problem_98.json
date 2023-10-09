@@ -1,0 +1,44 @@
+{
+    "identifier": "problem_98",
+    "description": "The goal of this challenge is to devise a function that prompts the user to specify a range limit. The function should then generate a list of numbers within this range that are divisible by 5.",
+    "function_prototype": {
+        "function_name": "filter_by_input",
+        "input_parameters": [],
+        "output_type": "list of integers"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {},
+            "expected_output": [5, 10, 15, 20],
+            "input_string_sequence": ["20"]
+        }
+    ],
+    "tags": ["User Input", "Lists", "Modulus Operation"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Construct a function called 'filter_by_input'. When this function is invoked, it should request the user to provide a range limit. Subsequently, the function is expected to produce and return a list of numbers, up to the specified limit, which are divisible by 5. For example, if the user supplies '20' as the input, the function should yield the list [5, 10, 15, 20].",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": [5, 10, 15, 20],
+                    "input_string_sequence": ["20"]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In this challenge, you are tasked with creating an interactive function named 'filter_by_input'. This function's primary responsibility is to solicit a range limit from the user. Upon receiving this input, the function should set about generating a list of integers that fall within this range and are divisible by 5. The function then returns this list. For illustration, if a user enters '20', your function should produce the list [5, 10, 15, 20].",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": [5, 10, 15, 20],
+                    "input_string_sequence": ["20"]
+                }
+            ]
+        }
+    ]
+}
+

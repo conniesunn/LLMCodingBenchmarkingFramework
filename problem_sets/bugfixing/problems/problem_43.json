@@ -20,9 +20,9 @@
             "input": {
                 "time_12h": "02:30 PM"
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": "14:30"
-            }
+            }]
         }
     ],
     "tags": ["Time Conversion", "Seq2Seq"],
@@ -36,9 +36,9 @@
                     "input": {
                         "time_12h": "02:30 PM"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "14:30"
-                    }
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "time_12h": "02:30 PM"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "14:30"
-                    }
+                    }]
                 }
             ]
         }

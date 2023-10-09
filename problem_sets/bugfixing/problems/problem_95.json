@@ -3,13 +3,13 @@
     "description": "The objective is to design a function that interactively requests a seed word from the user. Once received, the function should return this word repeated thrice consecutively.",
     "function_prototype": {
         "function_name": "word_repeater",
-        "input_parameters": [],
-        "output_type": "string"
+        "parameters": [],
+        "return_values": [{"type": "string"}]
     },
     "correctness_test_suite": [
         {
             "input": {},
-            "expected_output": "hellohellohello",
+            "expected_output": ["hellohellohello"],
             "input_string_sequence": ["hello"]
         }
     ],
@@ -22,7 +22,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "hellohellohello",
+                    "expected_output": ["hellohellohello"],
                     "input_string_sequence": ["hello"]
                 }
             ]
@@ -34,7 +34,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "hellohellohello",
+                    "expected_output": ["hellohellohello"],
                     "input_string_sequence": ["hello"]
                 }
             ]

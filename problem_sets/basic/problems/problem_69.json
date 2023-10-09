@@ -1,0 +1,40 @@
+{
+    "identifier": "problem_69",
+    "description": "Implement a Monte Carlo method for policy evaluation.",
+    "function_prototype": {
+        "function_name": "monte_carlo_policy_evaluation",
+        "input_parameters": [],
+        "output_type": "any"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {},
+            "expected_output": "any_non_null_value"
+        }
+    ],
+    "tags": ["Reinforcement Learning", "Monte Carlo", "Policy Evaluation"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'monte_carlo_policy_evaluation' function which simulates a Monte Carlo method for policy evaluation. Though the function does not have any specific parameters or outputs for this task, ensure it returns a non-null value.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "any_non_null_value"
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Monte Carlo methods play a pivotal role in reinforcement learning, especially in the domain of policy evaluation. Your task is to simulate this by designing a basic function called 'monte_carlo_policy_evaluation'. While this function doesn't require any specific inputs and can return any non-null value for this exercise, the essence is to depict the structure of a Monte Carlo method for policy evaluation.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "any_non_null_value"
+                }
+            ]
+        }
+    ]
+}

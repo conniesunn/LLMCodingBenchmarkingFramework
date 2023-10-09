@@ -20,9 +20,9 @@
             "input": {
                 "text": "Promote violence"
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": "Content flagged"
-            }
+            }]
         }
     ],
     "tags": ["Safety", "Content Filtering"],
@@ -36,9 +36,9 @@
                     "input": {
                         "text": "Promote violence"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "Content flagged"
-                    }
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "text": "Promote violence"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "Content flagged"
-                    }
+                    }]
                 }
             ]
         }

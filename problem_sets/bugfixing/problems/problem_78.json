@@ -3,20 +3,20 @@
     "description": "Implement a basic self-attention mechanism for a given matrix X.",
     "function_prototype": {
         "function_name": "self_attention",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "X",
                 "type": "numpy.ndarray"
             }
         ],
-        "output_type": "numpy.ndarray"
+        "return_values": [{"type": "numpy.ndarray"}]
     },
     "correctness_test_suite": [
         {
             "input": {
                 "X": [[1, 2], [2, 3], [3, 4]]
             },
-            "expected_output_shape": [3, 2]
+            "expected_output": [3, 2]
         }
     ],
     "tags": ["Attention Mechanism", "Neural Networks"],
@@ -30,7 +30,7 @@
                     "input": {
                         "X": [[1, 2], [2, 3], [3, 4]]
                     },
-                    "expected_output_shape": [3, 2]
+                    "expected_output": [3, 2]
                 }
             ]
         },
@@ -43,7 +43,7 @@
                     "input": {
                         "X": [[1, 2], [2, 3], [3, 4]]
                     },
-                    "expected_output_shape": [3, 2]
+                    "expected_output": [3, 2]
                 }
             ]
         }

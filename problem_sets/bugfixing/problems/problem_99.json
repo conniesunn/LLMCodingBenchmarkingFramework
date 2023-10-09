@@ -3,13 +3,13 @@
     "description": "The goal of this challenge is to implement a function that prompts the user for a sentence and a word. This function should then combine the sentence with the word, placing a space between them, and finally return the resultant sentence.",
     "function_prototype": {
         "function_name": "append_to_sentence",
-        "input_parameters": [],
-        "output_type": "string"
+        "parameters": [],
+        "return_values": [{"type": "string"}]
     },
     "correctness_test_suite": [
         {
             "input": {},
-            "expected_output": "Hello world",
+            "expected_output": ["Hello world"],
             "input_string_sequence": ["Hello", "world"]
         }
     ],
@@ -22,7 +22,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "Hello world",
+                    "expected_output": ["Hello world"],
                     "input_string_sequence": ["Hello", "world"]
                 }
             ]
@@ -34,7 +34,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "Hello world",
+                    "expected_output": ["Hello world"],
                     "input_string_sequence": ["Hello", "world"]
                 }
             ]

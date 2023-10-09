@@ -1,0 +1,46 @@
+{
+    "identifier": "problem_88",
+    "description": "The task is to extract a specified key's value from each JSON in a list of JSON formatted strings.",
+    "function_prototype": {
+        "function_name": "extract_from_json",
+        "input_parameters": [
+            {
+                "name": "json_list",
+                "type": "list[str]"
+            },
+            {
+                "name": "key",
+                "type": "str"
+            }
+        ],
+        "output_type": "list[str]"
+    },
+    "correctness_test_suite": [
+        {
+
+        }
+    ],
+    "tags": ["JSON", "Data Extraction"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'extract_from_json' function that extracts a specified key's value from each JSON in a given list of JSON formatted strings.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+ 
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "JSON is a commonly used data interchange format. Given a list of strings, where each string is formatted as a JSON, and a key, design and implement a function 'extract_from_json' to extract the value associated with the given key from each JSON in the list. For example, if the input list is ['{\"id\": 1, \"name\": \"A\"}', '{\"id\": 2, \"name\": \"B\"}'] and the key is 'name', the output should be ['A', 'B'].",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+
+                }
+            ]
+        }
+    ]
+}

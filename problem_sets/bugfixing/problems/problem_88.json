@@ -3,7 +3,7 @@
     "description": "The task is to extract a specified key's value from each JSON in a list of JSON formatted strings.",
     "function_prototype": {
         "function_name": "extract_from_json",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "json_list",
                 "type": "list[str]"
@@ -13,11 +13,15 @@
                 "type": "str"
             }
         ],
-        "output_type": "list[str]"
+        "return_values": [{"type": "list[str]"}]
     },
     "correctness_test_suite": [
         {
-
+            "input": {
+                "json_list": ["{\"id\": 1, \"name\": \"A\"}", "{\"id\": 2, \"name\": \"B\"}"],
+                "key": "name"
+            },
+            "expected_output": ["A", "B"]
         }
     ],
     "tags": ["JSON", "Data Extraction"],
@@ -28,7 +32,11 @@
             "genericize": false,
             "sample_inputs_outputs": [
                 {
- 
+                    "input": {
+                        "json_list": ["{\"id\": 1, \"name\": \"A\"}", "{\"id\": 2, \"name\": \"B\"}"],
+                        "key": "name"
+                    },
+                    "expected_output": ["A", "B"]
                 }
             ]
         },
@@ -38,7 +46,11 @@
             "genericize": true,
             "sample_inputs_outputs": [
                 {
-
+                    "input": {
+                        "json_list": ["{\"id\": 1, \"name\": \"A\"}", "{\"id\": 2, \"name\": \"B\"}"],
+                        "key": "name"
+                    },
+                    "expected_output": ["A", "B"]
                 }
             ]
         }

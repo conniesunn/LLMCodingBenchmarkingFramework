@@ -3,8 +3,8 @@
     "description": "The aim is to craft a function that interactively prompts the user for a base number and an increment value. Upon receiving these inputs, the function must generate and return a list that begins from the base number and gets incremented by the specified increment, continuing up to (base + 5 * increment).",
     "function_prototype": {
         "function_name": "incremental_sequence",
-        "input_parameters": [],
-        "output_type": "list of integers"
+        "parameters": [],
+        "return_values": [{"type": "list of integers"}]
     },
     "correctness_test_suite": [
         {

@@ -1,0 +1,44 @@
+{
+    "identifier": "problem_67",
+    "description": "Given the current state and action taken, define a state transition function. For the current assessment, assume the states are numbers and actions can be -1, 0, or 1 (decrease, stay, increase).",
+    "function_prototype": {
+        "function_name": "state_transition",
+        "input_parameters": [{"name": "current_state", "type": "int"}, {"name": "action", "type": "int"}],
+        "output_type": "int"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"current_state": 3, "action": 1},
+            "expected_output": 4
+        },
+        {
+            "input": {"current_state": 3, "action": -1},
+            "expected_output": 2
+        }
+    ],
+    "tags": ["Reinforcement Learning", "State Transition"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'state_transition' function. Given a 'current_state' (an integer) and an 'action' (-1, 0, or 1), return the new state after applying the action. An action of -1 decreases the state by 1, an action of 0 keeps the state unchanged, and an action of 1 increases the state by 1.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"current_state": 3, "action": 1},
+                    "expected_output": 4
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In the context of a simple reinforcement learning environment, you need to design a state transition function. The function named 'state_transition' takes in two integer arguments: 'current_state' and 'action'. The 'current_state' represents the current numerical state of the agent, and 'action' can be one of three values: -1 (decrease state by 1), 0 (keep state unchanged), or 1 (increase state by 1). The function should return the new state after applying the given action.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"current_state": 3, "action": 1},
+                    "expected_output": 4
+                }
+            ]
+        }
+    ]
+}

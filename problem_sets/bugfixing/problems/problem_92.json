@@ -3,13 +3,13 @@
     "description": "The task is to implement an interactive function that prompts the user for a name and then returns a greeting story incorporating that name.",
     "function_prototype": {
         "function_name": "greeting_story",
-        "input_parameters": [],
-        "output_type": "str"
+        "parameters": [],
+        "return_values": [{"type": "str"}]
     },
     "correctness_test_suite": [
         {
             "input": {},
-            "expected_output": "Once upon a time, Alice entered a magical realm!",
+            "expected_output": ["Once upon a time, Alice entered a magical realm!"],
             "input_string": "Alice"
         }
     ],
@@ -22,7 +22,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "Once upon a time, Alice entered a magical realm!",
+                    "expected_output": ["Once upon a time, Alice entered a magical realm!"],
                     "input_string": "Alice"
                 }
             ]
@@ -34,7 +34,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "Once upon a time, Alice entered a magical realm!",
+                    "expected_output": ["Once upon a time, Alice entered a magical realm!"],
                     "input_string": "Alice"
                 }
             ]

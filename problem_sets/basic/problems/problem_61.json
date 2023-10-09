@@ -1,0 +1,51 @@
+{
+    "identifier": "problem_61",
+    "description": "Implement a basic Q-learning algorithm to maximize the cumulative reward in a simple environment.",
+    "function_prototype": {
+        "function_name": "q_learning",
+        "parameters": [
+            {"name": "rewards", "type": "List[int]"},
+            {"name": "alpha", "type": "float", "default": "0.1"},
+            {"name": "gamma", "type": "float", "default": "0.9"},
+            {"name": "episodes", "type": "int", "default": "100"}
+        ],
+        "return_values": [{"type": "List[List[float]]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "rewards": [0, 1, 5, 10]
+            },
+            "expected_output": "custom"
+        }
+    ],
+    "tags": ["Reinforcement Learning", "Q-Learning", "Intermediate"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the q_learning function to perform Q-learning for maximizing cumulative reward in a given environment.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "rewards": [0, 1, 5, 10]
+                    },
+                    "expected_output": "custom"
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Write a function named 'q_learning' that takes four arguments: 'rewards' which is a list of rewards for each state, 'alpha' which is the learning rate, 'gamma' which is the discount factor, and 'episodes' which is the number of episodes to run the Q-learning. The function should return a Q-table, which is a list of lists where each inner list represents the Q-values for 'stay' and 'move right' actions for a given state.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "rewards": [0, 1, 5, 10]
+                    },
+                    "expected_output": "custom"
+                }
+            ]
+        }
+    ]
+}

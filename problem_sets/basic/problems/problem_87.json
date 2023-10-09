@@ -1,0 +1,60 @@
+{
+    "identifier": "problem_87",
+    "description": "The task is to reshape a 2D numpy array of image data into a 3D shape with RGB channels, using the data from the 2D array.",
+    "function_prototype": {
+        "function_name": "reshape_image",
+        "input_parameters": [
+            {
+                "name": "image_2d",
+                "type": "numpy.ndarray"
+            }
+        ],
+        "output_type": "numpy.ndarray"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "image_2d": [[1, 2], [3, 4]]
+            },
+            "expected_output": [
+                [[1, 1, 1], [2, 2, 2]],
+                [[3, 3, 3], [4, 4, 4]]
+            ]
+        }
+    ],
+    "tags": ["Image Processing", "Reshaping"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'reshape_image' function that reshapes a 2D numpy array of image data into a 3D array with RGB channels, using data from the 2D array.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image_2d": [[1, 2], [3, 4]]
+                    },
+                    "expected_output": [
+                        [[1, 1, 1], [2, 2, 2]],
+                        [[3, 3, 3], [4, 4, 4]]
+                    ]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Images are often represented in RGB format with three channels. Given a 2D numpy array of image data, your task is to reshape this data into a 3D array of shape (height, width, 3), where 3 represents RGB channels. The data for the channels should be repeated from the 2D array. Design and implement the 'reshape_image' function to achieve this. For instance, if the 2D input is [[1, 2], [3, 4]], the output should be [[[1, 1, 1], [2, 2, 2]], [[3, 3, 3], [4, 4, 4]]].",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "image_2d": [[1, 2], [3, 4]]
+                    },
+                    "expected_output": [
+                        [[1, 1, 1], [2, 2, 2]],
+                        [[3, 3, 3], [4, 4, 4]]
+                    ]
+                }
+            ]
+        }
+    ]
+}

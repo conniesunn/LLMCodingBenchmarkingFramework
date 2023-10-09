@@ -1,0 +1,51 @@
+{
+    "identifier": "problem_81",
+    "description": "Given a list of strings, implement a text cleaning function that removes special characters and converts text to lowercase.",
+    "function_prototype": {
+        "function_name": "clean_text",
+        "input_parameters": [
+            {
+                "name": "text_list",
+                "type": "List[str]"
+            }
+        ],
+        "output_type": "List[str]"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "text_list": ["Hello!", "This's a sample text!"]
+            },
+            "expected_output": ["hello", "thiss a sample text"]
+        }
+    ],
+    "tags": ["Text Cleaning", "String Manipulation"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'clean_text' function that takes in a list of strings, removes special characters, and converts them to lowercase. Ensure the returned list has cleaned text strings.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text_list": ["Hello!", "This's a sample text!"]
+                    },
+                    "expected_output": ["hello", "thiss a sample text"]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Text cleaning is an essential step in natural language processing. In this problem, you need to design a function 'clean_text' that accepts a list of strings. Your task is to process each string by removing any special characters (like punctuation) and converting it to lowercase. Return the cleaned text strings in a list. The order of strings in the output should match the order in the input list.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "text_list": ["Hello!", "This's a sample text!"]
+                    },
+                    "expected_output": ["hello", "thiss a sample text"]
+                }
+            ]
+        }
+    ]
+}

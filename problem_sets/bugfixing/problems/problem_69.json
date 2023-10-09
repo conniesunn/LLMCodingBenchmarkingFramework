@@ -3,13 +3,13 @@
     "description": "Implement a Monte Carlo method for policy evaluation.",
     "function_prototype": {
         "function_name": "monte_carlo_policy_evaluation",
-        "input_parameters": [],
-        "output_type": "any"
+        "parameters": [],
+        "return_values": [{"type":"any"}]
     },
     "correctness_test_suite": [
         {
             "input": {},
-            "expected_output": "any_non_null_value"
+            "expected_output": ["any_non_null_value"]
         }
     ],
     "tags": ["Reinforcement Learning", "Monte Carlo", "Policy Evaluation"],
@@ -21,7 +21,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "any_non_null_value"
+                    "expected_output": ["any_non_null_value"]
                 }
             ]
         },
@@ -32,7 +32,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "any_non_null_value"
+                    "expected_output": ["any_non_null_value"]
                 }
             ]
         }

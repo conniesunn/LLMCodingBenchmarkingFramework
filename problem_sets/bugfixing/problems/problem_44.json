@@ -20,9 +20,9 @@
             "input": {
                 "text": "The nurse is she."
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": "Bias detected"
-            }
+            }]
         }
     ],
     "tags": ["Ethics", "Bias Detection"],
@@ -36,9 +36,9 @@
                     "input": {
                         "text": "The nurse is she."
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "Bias detected"
-                    }
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "text": "The nurse is she."
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "Bias detected"
-                    }
+                    }]
                 }
             ]
         }

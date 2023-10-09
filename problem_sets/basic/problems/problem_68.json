@@ -1,0 +1,40 @@
+{
+    "identifier": "problem_68",
+    "description": "Implement a basic model-based reinforcement learning planning step.",
+    "function_prototype": {
+        "function_name": "model_based_planning",
+        "input_parameters": [],
+        "output_type": "any"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {},
+            "expected_output": "any_non_null_value"
+        }
+    ],
+    "tags": ["Reinforcement Learning", "Model-based", "Planning"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'model_based_planning' function which simulates a basic model-based reinforcement learning planning step. Though the function does not have any specific parameters or outputs for this task, ensure it returns a non-null value.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "any_non_null_value"
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In the realm of reinforcement learning, model-based planning plays an essential role in making decisions based on the learned model of the environment. Your task is to design a basic function called 'model_based_planning' that, for the sake of this problem, doesn't take any specific inputs and can return any non-null value. The goal is to represent the skeleton of a model-based RL planning step.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "any_non_null_value"
+                }
+            ]
+        }
+    ]
+}

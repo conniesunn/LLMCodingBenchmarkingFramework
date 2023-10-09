@@ -26,9 +26,9 @@
                 "lines": ["Love is in the air", "Everywhere I look around"],
                 "length": 3
             },
-            "expected_output": {
-                "output": "Love is in the air\nEverywhere I look around\nLove is in the air"
-            }
+            "expected_output": [{
+                "output": ["Love is in the air\nEverywhere I look around\nLove is in the air"]
+            }]
         }
     ],
     "tags": ["Text Generation", "Basic Algorithms"],
@@ -43,9 +43,9 @@
                         "lines": ["Love is in the air", "Everywhere I look around"],
                         "length": 3
                     },
-                    "expected_output": {
-                        "output": "Love is in the air\nEverywhere I look around\nLove is in the air"
-                    }
+                    "expected_output": [{
+                        "output": ["Love is in the air\nEverywhere I look around\nLove is in the air"]
+                    }]
                 }
             ]
         },
@@ -59,9 +59,9 @@
                         "lines": ["Love is in the air", "Everywhere I look around"],
                         "length": 3
                     },
-                    "expected_output": {
-                        "output": "Love is in the air\nEverywhere I look around\nLove is in the air"
-                    }
+                    "expected_output": [{
+                        "output": ["Love is in the air\nEverywhere I look around\nLove is in the air"]
+                    }]
                 }
             ]
         }

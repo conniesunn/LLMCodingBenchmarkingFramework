@@ -1,0 +1,43 @@
+{
+    "identifier": "problem_89",
+    "description": "The task is to balance a dataset in the form of a list where each item is a tuple (feature, label) so that all labels have equal representation. If needed, items can be randomly dropped to achieve balance.",
+    "function_prototype": {
+        "function_name": "balance_dataset",
+        "input_parameters": [
+            {
+                "name": "data",
+                "type": "list[tuple[str, str]]"
+            }
+        ],
+        "output_type": "list[tuple[str, str]]"
+    },
+    "correctness_test_suite": [
+        {
+
+        
+        }
+    ],
+    "tags": ["Data Balancing", "Dataset"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'balance_dataset' function that balances a dataset represented as a list of tuples. Each tuple consists of a feature and its corresponding label. The function should adjust the dataset so that all labels are equally represented. If needed, random tuples can be removed to achieve balance.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+  
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In machine learning, balancing a dataset is often essential to train models effectively. Given a dataset represented as a list of tuples, where each tuple consists of a feature and its corresponding label, you are to design and implement a function 'balance_dataset'. The function should balance the dataset such that all labels are equally represented. If one label has more occurrences than another, you can randomly remove the extra tuples to achieve balance. For instance, if the dataset has [('f1', 'A'), ('f2', 'A'), ('f3', 'B')], the balanced dataset can be [('f1', 'A'), ('f3', 'B')] or [('f2', 'A'), ('f3', 'B')].",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+
+                }
+            ]
+        }
+    ]
+}

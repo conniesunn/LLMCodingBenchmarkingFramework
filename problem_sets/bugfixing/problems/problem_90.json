@@ -3,13 +3,13 @@
     "description": "The task is to flip a 2D numpy array representing an image horizontally.",
     "function_prototype": {
         "function_name": "flip_image",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "image_2d",
                 "type": "2D numpy array"
             }
         ],
-        "output_type": "2D numpy array"
+        "return_values": [{"type": "2D numpy array"}]
     },
     "correctness_test_suite": [
         {

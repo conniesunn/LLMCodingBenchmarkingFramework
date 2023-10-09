@@ -1,0 +1,65 @@
+{
+    "identifier": "problem_75",
+    "description": "Write a function that takes in attention weights and visualizes them for given input and output sequences.",
+    "function_prototype": {
+        "function_name": "visualize_attention_weights",
+        "parameters": [
+            {
+                "name": "input_seq",
+                "type": "List[str]"
+            },
+            {
+                "name": "output_seq",
+                "type": "List[str]"
+            },
+            {
+                "name": "attention_weights",
+                "type": "List[List[float]]"
+            }
+        ],
+        "return_values": [{"type": "None"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "input_seq": ["I", "love", "AI"],
+                "output_seq": ["J'aime", "l'IA"],
+                "attention_weights": [[0.5, 0.3, 0.2], [0.1, 0.5, 0.4]]
+            },
+            "expected_output": [null]
+        }
+    ],
+    "tags": ["Attention Mechanism", "Visualization", "Neural Networks"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'visualize_attention_weights' function that accepts input sequences, output sequences, and attention weights. This function should provide a visualization showing how each input token is attended to by the output tokens. The function doesn't need to return anything.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "input_seq": ["I", "love", "AI"],
+                        "output_seq": ["J'aime", "l'IA"],
+                        "attention_weights": [[0.5, 0.3, 0.2], [0.1, 0.5, 0.4]]
+                    },
+                    "expected_output": [null]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Attention weights are crucial in understanding how models like Transformers make decisions. Your task is to design a function 'visualize_attention_weights' that takes in input sequences, output sequences, and attention weights. This function should provide a visual representation of how each input word is related to each output word, based on the attention weights. The visualization can be any kind of plot or heatmap, and the function doesn't need to return anything. For instance, given the input sequence ['I', 'love', 'AI'], the output sequence ['J'aime', 'l'IA'], and attention weights [[0.5, 0.3, 0.2], [0.1, 0.5, 0.4]], you need to depict how strongly each output word attends to each input word.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "input_seq": ["I", "love", "AI"],
+                        "output_seq": ["J'aime", "l'IA"],
+                        "attention_weights": [[0.5, 0.3, 0.2], [0.1, 0.5, 0.4]]
+                    },
+                    "expected_output": [null]
+                }
+            ]
+        }
+    ]
+}

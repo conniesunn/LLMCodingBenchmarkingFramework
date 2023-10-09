@@ -20,9 +20,9 @@
             "input": {
                 "text": "Seq2Seq models are fascinating. They translate sequences. It's awesome!"
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": "Seq2Seq models are fascinating. They translate sequences. It's awesome!"
-            }
+            }]
         }
     ],
     "tags": ["NLP", "Text Summarization", "Seq2Seq"],
@@ -36,9 +36,9 @@
                     "input": {
                         "text": "Seq2Seq models are fascinating. They translate sequences. It's awesome!"
                     },
-                    "expected_output": {
-                        "output": "Seq2Seq models are fascinating. They translate sequences. It's awesome!"
-                    }
+                    "expected_output": [{
+                        "output": ["Seq2Seq models are fascinating. They translate sequences. It's awesome!"]
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "text": "Seq2Seq models are fascinating. They translate sequences. It's awesome!"
                     },
-                    "expected_output": {
-                        "output": "Seq2Seq models are fascinating. They translate sequences. It's awesome!"
-                    }
+                    "expected_output": [{
+                        "output": ["Seq2Seq models are fascinating. They translate sequences. It's awesome!"]
+                    }]
                 }
             ]
         }

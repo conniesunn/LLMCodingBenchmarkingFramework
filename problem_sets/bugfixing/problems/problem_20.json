@@ -20,9 +20,9 @@
             "input": {
                 "length": 3
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": [0.12, 0.75, 0.33]
-            }
+            }]
         }
     ],
     "tags": [
@@ -39,9 +39,9 @@
                     "input": {
                         "length": 3
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": [0.12, 0.75, 0.33]
-                    }
+                    }]
                 }
             ]
         },
@@ -54,9 +54,9 @@
                     "input": {
                         "length": 3
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": [0.12, 0.75, 0.33]
-                    }
+                    }]
                 }
             ]
         }

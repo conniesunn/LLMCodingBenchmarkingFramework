@@ -20,9 +20,9 @@
             "input": {
                 "english_text": "hello world"
             },
-            "expected_output": {
-                "output": "bonjour monde"
-            }
+            "expected_output": [{
+                "output": ["bonjour monde"]
+            }]
         }
     ],
     "tags": ["NLP", "Translation", "Seq2Seq"],
@@ -36,9 +36,9 @@
                     "input": {
                         "english_text": "hello world"
                     },
-                    "expected_output": {
-                        "output": "bonjour monde"
-                    }
+                    "expected_output": [{
+                        "output": ["bonjour monde"]
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "english_text": "hello world"
                     },
-                    "expected_output": {
-                        "output": "bonjour monde"
-                    }
+                    "expected_output": [{
+                        "output": ["bonjour monde"]
+                    }]
                 }
             ]
         }

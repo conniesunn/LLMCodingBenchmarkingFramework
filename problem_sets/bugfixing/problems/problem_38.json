@@ -20,9 +20,9 @@
             "input": {
                 "number": 25
             },
-            "expected_output": {
-                "output": "twenty five"
-            }
+            "expected_output": [{
+                "output": ["twenty five"]
+            }]
         }
     ],
     "tags": ["NLP", "Number Conversion", "Seq2Seq"],
@@ -36,9 +36,9 @@
                     "input": {
                         "number": 25
                     },
-                    "expected_output": {
-                        "output": "twenty five"
-                    }
+                    "expected_output": [{
+                        "output": ["twenty five"]
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "number": 25
                     },
-                    "expected_output": {
-                        "output": "twenty five"
-                    }
+                    "expected_output": [{
+                        "output": ["twenty five"]
+                    }]
                 }
             ]
         }

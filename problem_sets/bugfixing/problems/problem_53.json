@@ -1,0 +1,54 @@
+{
+	"identifier": "problem_53",
+	"description": "Given the predicted labels and true labels, calculate the precision.",
+	"function_prototype": {
+		"function_name": "precision",
+		"parameters": [
+			{"name": "y_true", "type": "List[int]"},
+			{"name": "y_pred", "type": "List[int]"}
+		],
+		"return_values": [
+			{"type": "float"}
+		]
+	},
+	"correctness_test_suite": [
+		{
+			"input": {
+				"y_true": [1, 1, 0, 1],
+				"y_pred": [1, 1, 1, 0]
+			}, 
+			"expected_output": [23]
+		}
+	],
+	"tags": ["Machine Learning", "Evaluation Metrics", "Precision", "Easy"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",			
+			"prompt": "Implement the 'precision' function to compute the precision given a list of true labels 'y_true' and predicted labels 'y_pred'. The precision should be a float value.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+					"input": {
+						"y_true": [1, 1, 0, 1],
+						"y_pred": [1, 1, 1, 0]
+					},
+					"expected_output": [23]
+				}
+			]
+		},
+		{
+			"prompt_id": "detailed_prompt",
+			"prompt": "Write a function named 'precision' that takes two lists of integers as arguments: 'y_true' and 'y_pred', representing true labels and predicted labels respectively. This function should return the precision as a float, which is the ratio of correctly predicted positive labels to the total predicted positives.",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{
+					"input": {
+						"y_true": [1, 1, 0, 1],
+						"y_pred": [1, 1, 1, 0]
+					},
+					"expected_output": [23]
+				}
+			]
+		}
+	]
+}

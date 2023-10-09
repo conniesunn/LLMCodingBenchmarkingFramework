@@ -3,17 +3,17 @@
     "description": "Given the current state and action taken, define a state transition function. For the current assessment, assume the states are numbers and actions can be -1, 0, or 1 (decrease, stay, increase).",
     "function_prototype": {
         "function_name": "state_transition",
-        "input_parameters": [{"name": "current_state", "type": "int"}, {"name": "action", "type": "int"}],
-        "output_type": "int"
+        "parameters": [{"name": "current_state", "type": "int"}, {"name": "action", "type": "int"}],
+        "return_values": [{"type": "int"}]
     },
     "correctness_test_suite": [
         {
             "input": {"current_state": 3, "action": 1},
-            "expected_output": 4
+            "expected_output": [4]
         },
         {
             "input": {"current_state": 3, "action": -1},
-            "expected_output": 2
+            "expected_output": [2]
         }
     ],
     "tags": ["Reinforcement Learning", "State Transition"],
@@ -25,7 +25,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {"current_state": 3, "action": 1},
-                    "expected_output": 4
+                    "expected_output": [4]
                 }
             ]
         },
@@ -36,7 +36,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {"current_state": 3, "action": 1},
-                    "expected_output": 4
+                    "expected_output": [4]
                 }
             ]
         }

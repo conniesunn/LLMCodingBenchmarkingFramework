@@ -3,7 +3,7 @@
     "description": "Implement layer normalization for a given matrix with parameters gamma and beta.",
     "function_prototype": {
         "function_name": "layer_normalization",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "matrix",
                 "type": "numpy.ndarray"
@@ -17,7 +17,7 @@
                 "type": "numpy.ndarray"
             }
         ],
-        "output_type": "numpy.ndarray"
+        "return_values": [{"type": "numpy.ndarray"}]
     },
     "correctness_test_suite": [
         {
@@ -26,7 +26,7 @@
                 "gamma": [1, 1, 1],
                 "beta": [0, 0, 0]
             },
-            "expected_output_shape": [2, 3]
+            "expected_output": [2, 3]
         }
     ],
     "tags": ["Layer Normalization", "Attention", "Neural Networks"],
@@ -42,7 +42,7 @@
                         "gamma": [1, 1, 1],
                         "beta": [0, 0, 0]
                     },
-                    "expected_output_shape": [2, 3]
+                    "expected_output": [2, 3]
                 }
             ]
         },
@@ -57,7 +57,7 @@
                         "gamma": [1, 1, 1],
                         "beta": [0, 0, 0]
                     },
-                    "expected_output_shape": [2, 3]
+                    "expected_output": [2, 3]
                 }
             ]
         }

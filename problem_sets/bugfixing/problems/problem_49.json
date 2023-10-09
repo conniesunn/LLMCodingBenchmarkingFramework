@@ -20,9 +20,9 @@
             "input": {
                 "data": [{"gender": "male", "outcome": "True"}, {"gender": "female", "outcome": "False"}]
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": "Bias detected against gender: female"
-            }
+            }]
         }
     ],
     "tags": ["Ethics", "Bias Detection"],
@@ -36,9 +36,9 @@
                     "input": {
                         "data": [{"gender": "male", "outcome": "True"}, {"gender": "female", "outcome": "False"}]
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "Bias detected against gender: female"
-                    }
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "data": [{"gender": "male", "outcome": "True"}, {"gender": "female", "outcome": "False"}]
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "Bias detected against gender: female"
-                    }
+                    }]
                 }
             ]
         }

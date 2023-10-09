@@ -25,9 +25,9 @@
                 "seq": "hello",
                 "length": 7
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": "hello__"
-            }
+            }]
         }
     ],
     "tags": ["Text Processing", "Padding"],
@@ -42,9 +42,9 @@
                         "seq": "hello",
                         "length": 7
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "hello__"
-                    }
+                    }]
                 }
             ]
         },
@@ -58,9 +58,9 @@
                         "seq": "hello",
                         "length": 7
                     },
-                    "expected_output": {
+                    "expected_output":[{
                         "output": "hello__"
-                    }
+                    }]
                 }
             ]
         }

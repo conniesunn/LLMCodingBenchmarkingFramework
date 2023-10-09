@@ -1,0 +1,83 @@
+{
+    "identifier": "problem_72",
+    "description": "Given matrices Q (queries), K (keys), and d_k (dimension of key vectors), implement the scaled dot-product attention mechanism.",
+    "function_prototype": {
+        "function_name": "scaled_dot_product_attention",
+        "input_parameters": [
+            {
+                "name": "Q",
+                "type": "2D numpy array"
+            },
+            {
+                "name": "K",
+                "type": "2D numpy array"
+            },
+            {
+                "name": "d_k",
+                "type": "int"
+            }
+        ],
+        "output_type": "2D numpy array"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "Q": [
+                    [1, 2],
+                    [2, 3]
+                ],
+                "K": [
+                    [1, 2],
+                    [2, 3]
+                ],
+                "d_k": 2
+            },
+            "expected_output": "2D_array_with_sum_2"
+        }
+    ],
+    "tags": ["Attention Mechanism", "Scaled Dot-Product", "Neural Networks"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'scaled_dot_product_attention' function that takes matrices Q (queries), K (keys), and an integer d_k (dimension of key vectors). Compute the scaled dot-product attention mechanism output. Your output should be a 2D numpy array whose elements sum up to 2.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "Q": [
+                            [1, 2],
+                            [2, 3]
+                        ],
+                        "K": [
+                            [1, 2],
+                            [2, 3]
+                        ],
+                        "d_k": 2
+                    },
+                    "expected_output": "2D_array_with_sum_2"
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "The scaled dot-product attention mechanism is pivotal in several neural network designs. Here, your mission is to create a function named 'scaled_dot_product_attention' that accepts matrices Q (queries), K (keys), and an integer d_k which represents the dimension of the key vectors. Your function should calculate the scaled dot-product between Q and K matrices and return a 2D numpy array. To verify the correct behavior, ensure the sum of elements in your output array is 2.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "Q": [
+                            [1, 2],
+                            [2, 3]
+                        ],
+                        "K": [
+                            [1, 2],
+                            [2, 3]
+                        ],
+                        "d_k": 2
+                    },
+                    "expected_output": "2D_array_with_sum_2"
+                }
+            ]
+        }
+    ]
+}

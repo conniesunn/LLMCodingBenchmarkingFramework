@@ -1,0 +1,40 @@
+{
+    "identifier": "problem_70",
+    "description": "Set up the basic structure for TD-Lambda for policy evaluation.",
+    "function_prototype": {
+        "function_name": "td_lambda",
+        "input_parameters": [],
+        "output_type": "any"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {},
+            "expected_output": "any_non_null_value"
+        }
+    ],
+    "tags": ["Reinforcement Learning", "Temporal Difference", "TD-Lambda", "Policy Evaluation"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'td_lambda' function to simulate the TD-Lambda method for policy evaluation. The function does not require specific input parameters or outputs for this task, but it should return a non-null value.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "any_non_null_value"
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Temporal Difference (TD) methods, especially TD-Lambda, are vital in reinforcement learning for policy evaluation. Your mission is to conceptualize this by crafting a rudimentary function named 'td_lambda'. Although this function doesn't demand any particular inputs and can produce any non-null result for this exercise, the primary intent is to represent the structure of a TD-Lambda method for policy evaluation.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "any_non_null_value"
+                }
+            ]
+        }
+    ]
+}

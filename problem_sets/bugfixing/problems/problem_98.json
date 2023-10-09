@@ -3,8 +3,8 @@
     "description": "The goal of this challenge is to devise a function that prompts the user to specify a range limit. The function should then generate a list of numbers within this range that are divisible by 5.",
     "function_prototype": {
         "function_name": "filter_by_input",
-        "input_parameters": [],
-        "output_type": "list of integers"
+        "parameters": [],
+        "return_values": [{"type": "list of integers"}]
     },
     "correctness_test_suite": [
         {

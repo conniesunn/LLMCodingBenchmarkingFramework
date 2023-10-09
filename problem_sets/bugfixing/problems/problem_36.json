@@ -20,9 +20,9 @@
             "input": {
                 "date": "2023-09-03"
             },
-            "expected_output": {
-                "output": "03/09/2023"
-            }
+            "expected_output": [{
+                "output": ["03/09/2023"]
+            }]
         }
     ],
     "tags": ["NLP", "Seq2Seq", "Date Manipulation"],
@@ -36,9 +36,9 @@
                     "input": {
                         "date": "2023-09-03"
                     },
-                    "expected_output": {
-                        "output": "03/09/2023"
-                    }
+                    "expected_output": [{
+                        "output": ["03/09/2023"]
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "date": "2023-09-03"
                     },
-                    "expected_output": {
-                        "output": "03/09/2023"
-                    }
+                    "expected_output": [{
+                        "output": ["03/09/2023"]
+                    }]
                 }
             ]
         }

@@ -3,13 +3,13 @@
     "description": "Given a list of strings, implement a text cleaning function that removes special characters and converts text to lowercase.",
     "function_prototype": {
         "function_name": "clean_text",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "text_list",
                 "type": "List[str]"
             }
         ],
-        "output_type": "List[str]"
+        "return_values": [{"type": "List[str]"}]
     },
     "correctness_test_suite": [
         {

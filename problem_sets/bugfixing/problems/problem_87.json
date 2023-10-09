@@ -3,13 +3,13 @@
     "description": "The task is to reshape a 2D numpy array of image data into a 3D shape with RGB channels, using the data from the 2D array.",
     "function_prototype": {
         "function_name": "reshape_image",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "image_2d",
                 "type": "numpy.ndarray"
             }
         ],
-        "output_type": "numpy.ndarray"
+        "return_values": [{"type": "numpy.ndarray"}]
     },
     "correctness_test_suite": [
         {

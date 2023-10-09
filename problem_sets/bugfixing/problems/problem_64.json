@@ -1,0 +1,40 @@
+{
+    "identifier": "problem_64",
+    "description": "Define a simple neural network with one hidden layer to represent Q-values for our environment. Use any deep learning library of your choice.",
+    "function_prototype": {
+        "function_name": "neural_network_q",
+        "parameters": [],
+        "return_values": [{"type": "Model"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {},
+            "expected_output": ["NOT_NONE"]
+        }
+    ],
+    "tags": ["Reinforcement Learning", "Deep Q-Network", "Deep Learning", "Neural Network"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'neural_network_q' function to define a simple neural network representing Q-values.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": ["NOT_NONE"]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Define a function named 'neural_network_q' that initializes and returns a neural network with one hidden layer to represent Q-values for an environment. The function doesn't take any arguments. The neural network model should be returned. You can use any deep learning library of your choice, such as TensorFlow or PyTorch.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": ["NOT_NONE"]
+                }
+            ]
+        }
+    ]
+}

@@ -25,9 +25,9 @@
                 "n": 2,
                 "palette": ["Red", "Blue", "Green"]
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": [["Red", "Green"], ["Blue", "Green"]]
-            }
+            }]
         }
     ],
     "tags": ["Art Generation", "Randomization"],
@@ -42,9 +42,9 @@
                         "n": 2,
                         "palette": ["Red", "Blue", "Green"]
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": [["Red", "Green"], ["Blue", "Green"]]
-                    }
+                    }]
                 }
             ]
         },
@@ -58,9 +58,9 @@
                         "n": 2,
                         "palette": ["Red", "Blue", "Green"]
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": [["Red", "Green"], ["Blue", "Green"]]
-                    }
+                    }]
                 }
             ]
         }

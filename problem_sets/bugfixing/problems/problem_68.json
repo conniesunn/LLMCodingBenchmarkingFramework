@@ -3,13 +3,13 @@
     "description": "Implement a basic model-based reinforcement learning planning step.",
     "function_prototype": {
         "function_name": "model_based_planning",
-        "input_parameters": [],
-        "output_type": "any"
+        "parameters": [],
+        "return_values": [{"type":"any"}]
     },
     "correctness_test_suite": [
         {
             "input": {},
-            "expected_output": "any_non_null_value"
+            "expected_output": ["any_non_null_value"]
         }
     ],
     "tags": ["Reinforcement Learning", "Model-based", "Planning"],
@@ -21,7 +21,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "any_non_null_value"
+                    "expected_output": ["any_non_null_value"]
                 }
             ]
         },
@@ -32,7 +32,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "any_non_null_value"
+                    "expected_output": ["any_non_null_value"]
                 }
             ]
         }

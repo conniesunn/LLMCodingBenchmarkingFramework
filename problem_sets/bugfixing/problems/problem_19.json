@@ -20,9 +20,9 @@
             "input": {
                 "input_data": "RealData"
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": "Real"
-            }
+            }]
         }
     ],
     "tags": [
@@ -39,9 +39,9 @@
                     "input": {
                         "input_data": "RealData"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "Real"
-                    }
+                    }]
                 }
             ]
         },
@@ -54,9 +54,9 @@
                     "input": {
                         "input_data": "RealData"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "Real"
-                    }
+                    }]
                 }
             ]
         }

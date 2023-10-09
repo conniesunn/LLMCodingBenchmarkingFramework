@@ -20,9 +20,9 @@
             "input": {
                 "dna_seq": "ATGC"
             },
-            "expected_output": {
+            "expected_output":[ {
                 "output": "AUGC"
-            }
+            }]
         }
     ],
     "tags": ["Biology", "DNA RNA Conversion", "Seq2Seq"],
@@ -36,9 +36,9 @@
                     "input": {
                         "dna_seq": "ATGC"
                     },
-                    "expected_output": {
+                    "expected_output":[{
                         "output": "AUGC"
-                    }
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "dna_seq": "ATGC"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "AUGC"
-                    }
+                    }]
                 }
             ]
         }

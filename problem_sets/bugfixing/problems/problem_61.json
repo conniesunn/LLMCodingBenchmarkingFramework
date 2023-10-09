@@ -16,7 +16,7 @@
             "input": {
                 "rewards": [0, 1, 5, 10]
             },
-            "expected_output": "custom"
+            "expected_output": ["custom"]
         }
     ],
     "tags": ["Reinforcement Learning", "Q-Learning", "Intermediate"],
@@ -30,7 +30,7 @@
                     "input": {
                         "rewards": [0, 1, 5, 10]
                     },
-                    "expected_output": "custom"
+                    "expected_output": ["custom"]
                 }
             ]
         },
@@ -43,7 +43,7 @@
                     "input": {
                         "rewards": [0, 1, 5, 10]
                     },
-                    "expected_output": "custom"
+                    "expected_output": ["custom"]
                 }
             ]
         }

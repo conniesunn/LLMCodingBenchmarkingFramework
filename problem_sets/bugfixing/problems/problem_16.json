@@ -20,9 +20,9 @@
             "input": {
                 "embeddings": [[1,2], [3,4], [3.1, 4.1]]
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": [[3,4], [3.1, 4.1]]
-            }
+            }]
         }
     ],
     "tags": [
@@ -40,9 +40,9 @@
                     "input": {
                         "embeddings": [[1,2], [3,4], [3.1, 4.1]]
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": [[3,4], [3.1, 4.1]]
-                    }
+                    }]
                 }
             ]
         },
@@ -55,9 +55,9 @@
                     "input": {
                         "embeddings": [[1,2], [3,4], [3.1, 4.1]]
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": [[3,4], [3.1, 4.1]]
-                    }
+                    }]
                 }
             ]
         }

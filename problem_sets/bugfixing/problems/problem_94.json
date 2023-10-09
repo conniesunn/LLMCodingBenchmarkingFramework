@@ -3,13 +3,13 @@
     "description": "The aim is to design a function that prompts the user for two numeric values and plots these on a graph. While the primary function would display a graph, for the purpose of testing and validation, the function should return the two numbers as a tuple.",
     "function_prototype": {
         "function_name": "plot_points",
-        "input_parameters": [],
-        "output_type": "tuple"
+        "parameters": [],
+        "return_values": [{"type": "tuple"}]
     },
     "correctness_test_suite": [
         {
             "input": {},
-            "expected_output": "(1, 2)",
+            "expected_output": ["(1, 2)"],
             "input_string_sequence": ["1", "2"]
         }
     ],
@@ -22,7 +22,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "(1, 2)",
+                    "expected_output": ["(1, 2)"],
                     "input_string_sequence": ["1", "2"]
                 }
             ]
@@ -34,7 +34,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "(1, 2)",
+                    "expected_output": ["(1, 2)"],
                     "input_string_sequence": ["1", "2"]
                 }
             ]

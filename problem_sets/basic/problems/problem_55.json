@@ -1,0 +1,54 @@
+{
+	"identifier": "problem_55",
+	"description": "Implement the F1 score given precision and recall values.",
+	"function_prototype": {
+		"function_name": "f1_score",
+		"parameters": [
+			{"name": "precision_val", "type": "float"},
+			{"name": "recall_val", "type": "float"}
+		],
+		"return_values": [
+			{"type": "float"}
+		]
+	},
+	"correctness_test_suite": [
+		{
+			"input": {
+				"precision_val": 1,
+				"recall_val": 1
+			}, 
+			"expected_output": [1]
+		}
+	],
+	"tags": ["Machine Learning", "Evaluation Metrics", "F1 Score", "Easy"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",			
+			"prompt": "Implement the 'f1_score' function to compute the F1 score given the precision value 'precision_val' and recall value 'recall_val'. The F1 score should be a float value.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+					"input": {
+						"precision_val": 1,
+						"recall_val": 1
+					},
+					"expected_output": [1]
+				}
+			]
+		},
+		{
+			"prompt_id": "detailed_prompt",
+			"prompt": "Write a function named 'f1_score' that takes two float arguments: 'precision_val' and 'recall_val', representing the values of precision and recall respectively. This function should return the F1 score as a float, which is the harmonic mean of precision and recall.",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{
+					"input": {
+						"precision_val": 1,
+						"recall_val": 1
+					},
+					"expected_output": [1]
+				}
+			]
+		}
+	]
+}

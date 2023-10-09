@@ -3,7 +3,7 @@
     "description": "Given matrices Q (queries), K (keys), and d_k (dimension of key vectors), implement the scaled dot-product attention mechanism.",
     "function_prototype": {
         "function_name": "scaled_dot_product_attention",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "Q",
                 "type": "2D numpy array"
@@ -17,7 +17,7 @@
                 "type": "int"
             }
         ],
-        "output_type": "2D numpy array"
+        "return_values": [{"type": "2D numpy array"}]
     },
     "correctness_test_suite": [
         {
@@ -32,7 +32,7 @@
                 ],
                 "d_k": 2
             },
-            "expected_output": "2D_array_with_sum_2"
+            "expected_output": ["2D_array_with_sum_2"]
         }
     ],
     "tags": ["Attention Mechanism", "Scaled Dot-Product", "Neural Networks"],
@@ -54,7 +54,7 @@
                         ],
                         "d_k": 2
                     },
-                    "expected_output": "2D_array_with_sum_2"
+                    "expected_output": ["2D_array_with_sum_2"]
                 }
             ]
         },
@@ -75,7 +75,7 @@
                         ],
                         "d_k": 2
                     },
-                    "expected_output": "2D_array_with_sum_2"
+                    "expected_output": ["2D_array_with_sum_2"]
                 }
             ]
         }

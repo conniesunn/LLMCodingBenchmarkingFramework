@@ -1,0 +1,43 @@
+{
+    "identifier": "problem_92",
+    "description": "The task is to implement an interactive function that prompts the user for a name and then returns a greeting story incorporating that name.",
+    "function_prototype": {
+        "function_name": "greeting_story",
+        "input_parameters": [],
+        "output_type": "str"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {},
+            "expected_output": "Once upon a time, Alice entered a magical realm!",
+            "input_string": "Alice"
+        }
+    ],
+    "tags": ["User Input", "String Manipulation"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'greeting_story' function that prompts the user to enter their name. The function should then return a string in the format: 'Once upon a time, [name] entered a magical realm!'. For instance, if the user enters 'Alice', the function should return 'Once upon a time, Alice entered a magical realm!'.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "Once upon a time, Alice entered a magical realm!",
+                    "input_string": "Alice"
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Personalized greetings make users feel special. In this task, you need to implement a function called 'greeting_story'. This function should interactively ask the user to provide their name. Upon receiving the name, the function should construct a greeting story that incorporates the entered name and return it. The story format should be: 'Once upon a time, [name] entered a magical realm!'. If the user enters the name 'Alice', for instance, your function should output 'Once upon a time, Alice entered a magical realm!'.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": "Once upon a time, Alice entered a magical realm!",
+                    "input_string": "Alice"
+                }
+            ]
+        }
+    ]
+}

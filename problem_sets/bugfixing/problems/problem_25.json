@@ -20,9 +20,9 @@
             "input": {
                 "image_label": "cat"
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": "A cat"
-            }
+            }]
         }
     ],
     "tags": ["Image Processing", "Text Generation"],
@@ -36,9 +36,9 @@
                     "input": {
                         "image_label": "cat"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "A cat"
-                    }
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "image_label": "cat"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "A cat"
-                    }
+                    }]
                 }
             ]
         }

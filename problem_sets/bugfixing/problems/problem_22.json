@@ -25,9 +25,9 @@
                 "corpus": "I love AI. I love coding. I love machine learning.",
                 "seed": "I love"
             },
-            "expected_output": {
+            "expected_output":[{
                 "output": "AI"
-            }
+            }]
         }
     ],
     "tags": [
@@ -45,9 +45,9 @@
                         "corpus": "I love AI. I love coding. I love machine learning.",
                         "seed": "I love"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "AI"
-                    }
+                    }]
                 }
             ]
         },
@@ -61,9 +61,9 @@
                         "corpus": "I love AI. I love coding. I love machine learning.",
                         "seed": "I love"
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "AI"
-                    }
+                    }]
                 }
             ]
         }

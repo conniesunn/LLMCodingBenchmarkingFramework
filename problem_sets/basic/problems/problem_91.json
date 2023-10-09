@@ -1,0 +1,43 @@
+{
+    "identifier": "problem_91",
+    "description": "The task is to prompt the user for a number, convert it to an integer and then return its square.",
+    "function_prototype": {
+        "function_name": "square_user_input",
+        "input_parameters": [],
+        "output_type": "int"
+    },
+    "correctness_test_suite": [
+        {
+            "input": {},
+            "expected_output": 25,
+            "input_string": "5"
+        }
+    ],
+    "tags": ["User Input", "Math"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'square_user_input' function that prompts the user to enter a number. The function should convert the entered value to an integer and then return its square. For instance, if the user enters '5', the function should return 25.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": 25,
+                    "input_string": "5"
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Creating interactive scripts often involves taking input from users, processing it, and providing a result. In this problem, you are required to implement the 'square_user_input' function. This function should prompt the user to enter a number (in string format). The entered value should then be converted to an integer. The function should compute the square of the number and return it. For example, if a user provides an input of '5', the function should convert it to the integer 5, compute its square (25), and return the value 25.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {},
+                    "expected_output": 25,
+                    "input_string": "5"
+                }
+            ]
+        }
+    ]
+}

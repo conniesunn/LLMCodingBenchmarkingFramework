@@ -119,7 +119,7 @@ class PerformanceGrader(Grader):
 						solutionGrades.append(grade)
 		return GradingOutput(solutionGrades, self.identifier)
 		
-		def can_grade(cls, problems: List[ProblemDefinition]) -> bool:
+	def can_grade(cls, problems: List[ProblemDefinition]) -> bool:
 		"""
 		Check if the current grader is capable of running the problem set.
 		This method should be overridden by a child class if said class has stricter requirements.

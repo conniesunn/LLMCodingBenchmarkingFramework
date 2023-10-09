@@ -3,13 +3,13 @@
     "description": "This challenge involves crafting an interactive function named 'narrative_generator'. On execution, the function should prompt the user for three elements that form the building blocks of a story: a protagonist, a setting, and an action. Utilizing these components, the function should compose and return a narrative.",
     "function_prototype": {
         "function_name": "narrative_generator",
-        "input_parameters": [],
-        "output_type": "string"
+        "parameters": [],
+        "return_values": [{"type": "string"}]
     },
     "correctness_test_suite": [
         {
             "input": {},
-            "expected_output": "Alice was in the forest, where she was singing joyfully.",
+            "expected_output": ["Alice was in the forest, where she was singing joyfully."],
             "input_string_sequence": ["Alice", "forest", "singing"]
         }
     ],
@@ -22,7 +22,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "Alice was in the forest, where she was singing joyfully.",
+                    "expected_output": ["Alice was in the forest, where she was singing joyfully."],
                     "input_string_sequence": ["Alice", "forest", "singing"]
                 }
             ]
@@ -34,7 +34,7 @@
             "sample_inputs_outputs": [
                 {
                     "input": {},
-                    "expected_output": "Alice was in the forest, where she was singing joyfully.",
+                    "expected_output": ["Alice was in the forest, where she was singing joyfully."],
                     "input_string_sequence": ["Alice", "forest", "singing"]
                 }
             ]

@@ -1,0 +1,40 @@
+{
+    "identifier": "problem_66",
+    "description": "Set up a basic structure for experience replay in reinforcement learning.",
+    "function_prototype": {
+        "class_name": "ExperienceReplay",
+        "constructor_parameters": [{"name": "capacity", "type": "int"}],
+        "attributes": [{"name": "capacity", "type": "int"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"capacity": 100},
+            "expected_output": [{"capacity": 100}]
+        }
+    ],
+    "tags": ["Reinforcement Learning", "Experience Replay"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the 'ExperienceReplay' class with a capacity attribute. The capacity attribute represents the maximum number of experiences the replay can hold.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"capacity": 100},
+                    "expected_output": [{"capacity": 100}]
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Define a class named 'ExperienceReplay'. The class should have a constructor that takes an integer argument 'capacity' representing the maximum number of experiences the replay can hold. The class should have an attribute 'capacity' that holds the provided value. This class will represent a basic structure for experience replay used in reinforcement learning, where experiences (state, action, reward, next state) are stored and later sampled to train reinforcement learning agents.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"capacity": 100},
+                    "expected_output": [{"capacity": 100}]
+                }
+            ]
+        }
+    ]
+}

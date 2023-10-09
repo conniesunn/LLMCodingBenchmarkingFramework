@@ -20,9 +20,9 @@
             "input": {
                 "data": {"name": ["John"], "age": [25], "SSN": ["XXX-XX-XXXX"]}
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": ["name", "SSN"]
-            }
+            }]
         }
     ],
     "tags": ["Data Privacy", "Ethics"],
@@ -36,9 +36,9 @@
                     "input": {
                         "data": {"name": ["John"], "age": [25], "SSN": ["XXX-XX-XXXX"]}
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": ["name", "SSN"]
-                    }
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "data": {"name": ["John"], "age": [25], "SSN": ["XXX-XX-XXXX"]}
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": ["name", "SSN"]
-                    }
+                    }]
                 }
             ]
         }

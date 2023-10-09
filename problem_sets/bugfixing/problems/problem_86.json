@@ -3,13 +3,13 @@
     "description": "Given a list of categorical items, the task is to convert the list into a one-hot encoded format.",
     "function_prototype": {
         "function_name": "one_hot_encode",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "data_list",
                 "type": "List[str]"
             }
         ],
-        "output_type": "List[List[int]]"
+        "return_values": [{"type": "List[List[int]]"}]
     },
     "correctness_test_suite": [
         {

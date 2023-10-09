@@ -20,9 +20,9 @@
             "input": {
                 "lines": ["The sky is so blue", "Roses red and violets too", "I love every hue"]
             },
-            "expected_output": {
+            "expected_output": [{
                 "output": "The sky is so blue\nRoses red and violets too\nI love every hue"
-            }
+            }]
         }
     ],
     "tags": ["Text Generation", "Intermediate"],
@@ -36,9 +36,9 @@
                     "input": {
                         "lines": ["The sky is so blue", "Roses red and violets too", "I love every hue"]
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "The sky is so blue\nRoses red and violets too\nI love every hue"
-                    }
+                    }]
                 }
             ]
         },
@@ -51,9 +51,9 @@
                     "input": {
                         "lines": ["The sky is so blue", "Roses red and violets too", "I love every hue"]
                     },
-                    "expected_output": {
+                    "expected_output": [{
                         "output": "The sky is so blue\nRoses red and violets too\nI love every hue"
-                    }
+                    }]
                 }
             ]
         }

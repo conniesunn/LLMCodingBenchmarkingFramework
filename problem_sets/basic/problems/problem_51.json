@@ -1,0 +1,40 @@
+{
+    "identifier": "problem_51",
+    "description": "This challenge focuses on a function called 'loan_decision_fairness'. The objective of this function is to analyze a list of loan applications to determine if there is any gender bias in the loan decisions. Each loan application in the list is a dictionary containing the name, gender, and approval status of the applicant. The function should return a statement if it detects any gender bias.",
+    "function_prototype": {
+        "function_name": "loan_decision_fairness",
+        "input_parameters": [{
+            "name": "applications",
+            "type": "list[dict]"
+        }],
+        "output_type": "string"
+    },
+    "correctness_test_suite": [
+        {
+            
+        }
+    ],
+    "tags": ["Data Analysis", "Fairness"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Your task is to create a function named 'loan_decision_fairness'. This function should be able to assess a list of loan applications to pinpoint any potential gender bias in the approval decisions. Each application within the list is a dictionary that contains details like the name, gender, and the approval status of the applicant. Should the function detect bias against a specific gender, it must relay that through its return statement.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                  
+                }
+            ]
+        },
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "In this challenge, you're tasked with the development of a function titled 'loan_decision_fairness'. The primary goal of this function is to comb through a list of loan applications and discern if there's any gender bias evident in the loan decisions. Each entry in this list is a dictionary, presenting information about the applicant, such as their name, gender, and whether they were approved or not. The function's responsibility is to analyze this data and, if it identifies any gender bias in the decisions, it should return an appropriate message conveying this finding.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    
+                }
+            ]
+        }
+    ]
+}

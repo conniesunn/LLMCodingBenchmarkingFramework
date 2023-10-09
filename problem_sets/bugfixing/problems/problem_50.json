@@ -3,15 +3,22 @@
     "description": "This challenge focuses on a function called 'loan_decision_fairness'. The objective of this function is to analyze a list of loan applications to determine if there is any gender bias in the loan decisions. Each loan application in the list is a dictionary containing the name, gender, and approval status of the applicant. The function should return a statement if it detects any gender bias.",
     "function_prototype": {
         "function_name": "loan_decision_fairness",
-        "input_parameters": [{
+        "parameters": [{
             "name": "applications",
             "type": "list[dict]"
         }],
-        "output_type": "string"
+        "return_values": [{"type": "string"}]
     },
     "correctness_test_suite": [
         {
-            
+            "input": {
+                "applications": [
+                    {"name": "Alice", "gender": "Female", "approved": "True"},
+                    {"name": "Bob", "gender": "Male", "approved": "False"},
+                    {"name": "Eve", "gender": "Female", "approved": "False"}
+                ]
+            },
+            "expected_output": ["No gender bias detected."]
         }
     ],
     "tags": ["Data Analysis", "Fairness"],
@@ -22,7 +29,14 @@
             "genericize": false,
             "sample_inputs_outputs": [
                 {
-                  
+                    "input": {
+                        "applications": [
+                            {"name": "Alice", "gender": "Female", "approved": "True"},
+                            {"name": "Bob", "gender": "Male", "approved": "False"},
+                            {"name": "Eve", "gender": "Female", "approved": "False"}
+                        ]
+                    },
+                    "expected_output": ["No gender bias detected."]
                 }
             ]
         },
@@ -32,9 +46,18 @@
             "genericize": true,
             "sample_inputs_outputs": [
                 {
-                    
+                    "input": {
+                        "applications": [
+                            {"name": "Alice", "gender": "Female", "approved": "True"},
+                            {"name": "Bob", "gender": "Male", "approved": "False"},
+                            {"name": "Eve", "gender": "Female", "approved": "False"}
+                        ]
+                    },
+                    "expected_output": ["No gender bias detected."]
                 }
             ]
         }
     ]
 }
+
+

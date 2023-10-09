@@ -3,16 +3,20 @@
     "description": "Given a list of data items, split the dataset into training and testing sets using the 80-20 rule.",
     "function_prototype": {
         "function_name": "split_dataset",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "data",
                 "type": "List[Any]"
             }
         ],
-        "output_type": "Tuple[List[Any], List[Any]]"
+        "return_values": [{"type": "Tuple[List[Any], List[Any]]"}]
     },
     "correctness_test_suite": [
         {
+            "input": {
+                "data": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            },
+            "expected_output": [[1, 2, 3, 4, 5, 6, 7, 8], [9, 10]]
         }
     ],
     "tags": ["Data Processing", "Splitting"],
@@ -23,7 +27,10 @@
             "genericize": false,
             "sample_inputs_outputs": [
                 {
-                   
+                    "input": {
+                        "data": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                    },
+                    "expected_output": [[1, 2, 3, 4, 5, 6, 7, 8], [9, 10]]
                 }
             ]
         },
@@ -33,7 +40,10 @@
             "genericize": true,
             "sample_inputs_outputs": [
                 {
-                    
+                    "input": {
+                        "data": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                    },
+                    "expected_output": [[1, 2, 3, 4, 5, 6, 7, 8], [9, 10]]
                 }
             ]
         }

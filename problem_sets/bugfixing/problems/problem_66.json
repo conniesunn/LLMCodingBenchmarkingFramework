@@ -2,9 +2,9 @@
     "identifier": "problem_66",
     "description": "Set up a basic structure for experience replay in reinforcement learning.",
     "function_prototype": {
-        "class_name": "ExperienceReplay",
-        "constructor_parameters": [{"name": "capacity", "type": "int"}],
-        "attributes": [{"name": "capacity", "type": "int"}]
+        "function_name": "ExperienceReplay",
+        "parameters": [{"name": "capacity", "type": "int"}],
+        "return_values": [{"name": "capacity", "type": "int"}]
     },
     "correctness_test_suite": [
         {

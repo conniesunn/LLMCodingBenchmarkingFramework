@@ -3,20 +3,20 @@
     "description": "Given a dictionary of data items with some values as None, replace the None values with the average of the other non-None values.",
     "function_prototype": {
         "function_name": "handle_missing_values",
-        "input_parameters": [
+        "parameters": [
             {
                 "name": "data_dict",
                 "type": "Dict[str, Optional[float]]"
             }
         ],
-        "output_type": "Dict[str, float]"
+        "return_values": [{"type": "Dict[str, float]"}]
     },
     "correctness_test_suite": [
         {
             "input": {
                 "data_dict": {"a": 10, "b": "None", "c": 30}
             },
-            "expected_output": {"a": 10, "b": 20, "c": 30}
+            "expected_output": [{"a": 10, "b": 20, "c": 30}]
         }
     ],
     "tags": ["Data Cleaning", "Handling Missing Values"],
@@ -30,7 +30,7 @@
                     "input": {
                         "data_dict": {"a": 10, "b": "None", "c": 30}
                     },
-                    "expected_output": {"a": 10, "b": 20, "c": 30}
+                    "expected_output": [{"a": 10, "b": 20, "c": 30}]
                 }
             ]
         },
@@ -43,7 +43,7 @@
                     "input": {
                         "data_dict": {"a": 10, "b": "None", "c": 30}
                     },
-                    "expected_output": {"a": 10, "b": 20, "c": 30}
+                    "expected_output": [{"a": 10, "b": 20, "c": 30}]
                 }
             ]
         }
